@@ -51,30 +51,12 @@ module.exports = configure(function (/* ctx */) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
+      publicPath: '/Xplora/',  // Cambia "Xplora" por el nombre exacto de tu repositorio en GitHub
       target: {
         browser: [ 'es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1' ],
         node: 'node20'
       },
-
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
-      // vueRouterBase,
-      // vueDevtools,
-      // vueOptionsAPI: false,
-
-      // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
-
-      // publicPath: '/',
-      // analyze: true,
-      // env: {},
-      // rawDefine: {}
-      // ignorePublicFolder: true,
-      // minify: false,
-      // polyfillModulePreload: true,
-      // distDir
-
-      // extendViteConf (viteConf) {},
-      // viteVuePluginOptions: {},
-
+      vueRouterMode: 'hash', // usa 'hash' para evitar problemas de rutas en GitHub Pages
       vitePlugins: [
         ['vite-plugin-checker', {
           eslint: {
@@ -83,6 +65,7 @@ module.exports = configure(function (/* ctx */) {
         }, { server: false }]
       ]
     },
+    
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
     devServer: {

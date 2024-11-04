@@ -1,0 +1,50 @@
+para iniciar el proyecto: quasar dev
+*************************************************
+PARA CREAR NUEVAS PAGINAS: 
+
+En carpeta pages creo mi archivo NombrePage.vue
+
+En router>router.js
+      { path: 'Nombre', component: () => import('pages/NombrePage.vue') }  // Página "Nombre"
+
+En layouts>MainLayout.vue
+  {
+    title: 'NombrePage',
+    caption: 'Nueva Página',
+    icon: 'school',
+    link: '/Nombre'  // Cambiar a la ruta interna
+  },
+*************************************************
+PARA LAS IMAGENES
+
+En carpeta assets>images coloco mis imagenes
+
+Colocar el siguiente código en donde sea que quiera colocar mi imagen.
+      <q-img src="~assets/images/pet3.jpg" />
+
+*************************************************
+CAMBIANDO TIPOGRAFIA
+
+Poner este codigo en app.scss
+
+//Tipografía de Títulos
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+//Tipografía de Texto
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Aplica Quicksand al cuerpo de la página */
+body {
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  /* Aplica Mulish a los títulos */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mulish', sans-serif;
+  }
+
+
+
+
+
+
+

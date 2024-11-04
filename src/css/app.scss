@@ -1,0 +1,25 @@
+// app global css in SCSS form
+
+//Tipografía de Títulos
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+//Tipografía de Texto
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Aplica Quicksand al cuerpo de la página */
+body {
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  /* Aplica Mulish a los títulos */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mulish', sans-serif;
+  }
+
+/* Define las variables de color */
+$color1: #FFA85C;  /* RGB: 255, 168, 92 */
+$color2: #F0C135;  /* RGB: 240, 193, 53 */
+$color3: #F0A835;  /* RGB: 240, 168, 53 */
+$color4: #F06D35;  /* RGB: 240, 109, 53 */
+$color5: #F5DC3B;  /* RGB: 245, 220, 59 */
+$color6: #F0C684;  /* RGB: 240, 198, 132 */
+  

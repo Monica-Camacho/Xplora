@@ -3,14 +3,10 @@
     <q-layout view="lHh Lpr lFf" class="WAL__layout shadow-3" container>
       <q-header elevated>
         <q-toolbar class="bg-grey-3 text-black">
-          <q-btn
-            round
-            flat
-            icon="keyboard_arrow_left"
-            class="WAL__drawer-open q-mr-sm"
-            @click="toggleLeftDrawer"
-            aria-label="Open menu"
-          />
+          <!-- Botón para abrir el menú lateral con Bootstrap Icon -->
+          <q-btn round flat class="WAL__drawer-open q-mr-sm" @click="toggleLeftDrawer" aria-label="Open menu">
+            <i class="bi bi-arrow-left"></i> <!-- Icono de Bootstrap -->
+          </q-btn>
 
           <q-btn round flat aria-label="Conversation Avatar">
             <q-avatar>
@@ -22,13 +18,21 @@
             {{ currentConversation.person }}
           </span>
 
-          <q-space/>
+          <q-space />
 
-          <q-btn round flat icon="search" aria-label="Search" />
-          <q-btn round flat aria-label="Attachments">
-            <q-icon name="attachment" class="rotate-135" />
+          <!-- Icono de búsqueda de Bootstrap -->
+          <q-btn round flat aria-label="Search">
+            <i class="bi bi-search"></i>
           </q-btn>
-          <q-btn round flat icon="more_vert" aria-label="More options">
+
+          <!-- Icono de adjunto de Bootstrap -->
+          <q-btn round flat aria-label="Attachments">
+            <i class="bi bi-paperclip rotate-135"></i>
+          </q-btn>
+
+          <!-- Icono de más opciones de Bootstrap -->
+          <q-btn round flat aria-label="More options">
+            <i class="bi bi-three-dots-vertical"></i>
             <q-menu auto-close :offset="[110, 0]">
               <q-list style="min-width: 150px">
                 <q-item clickable>
@@ -55,13 +59,7 @@
         </q-toolbar>
       </q-header>
 
-      <q-drawer
-        v-model="leftDrawerOpen"
-        show-if-above
-        bordered
-        :breakpoint="690"
-        aria-label="Navigation menu"
-      >
+      <q-drawer v-model="leftDrawerOpen" show-if-above bordered :breakpoint="690" aria-label="Navigation menu">
         <q-toolbar class="bg-grey-3">
           <q-avatar class="cursor-pointer">
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo.svg" alt="Logo">
@@ -69,8 +67,14 @@
 
           <q-space />
 
-          <q-btn round flat icon="message" aria-label="Messages" />
-          <q-btn round flat icon="more_vert" aria-label="More options">
+          <!-- Icono de mensaje de Bootstrap -->
+          <q-btn round flat aria-label="Messages">
+            <i class="bi bi-chat-dots"></i>
+          </q-btn>
+
+          <!-- Icono de más opciones de Bootstrap -->
+          <q-btn round flat aria-label="More options">
+            <i class="bi bi-three-dots-vertical"></i>
             <q-menu auto-close :offset="[110, 8]">
               <q-list style="min-width: 150px">
                 <q-item clickable>
@@ -95,20 +99,16 @@
             </q-menu>
           </q-btn>
 
-          <q-btn
-            round
-            flat
-            icon="close"
-            class="WAL__drawer-close"
-            @click="toggleLeftDrawer"
-            aria-label="Close menu"
-          />
+          <!-- Icono de cerrar de Bootstrap -->
+          <q-btn round flat class="WAL__drawer-close" @click="toggleLeftDrawer" aria-label="Close menu">
+            <i class="bi bi-x"></i>
+          </q-btn>
         </q-toolbar>
 
         <q-toolbar class="bg-grey-2">
           <q-input rounded outlined dense class="WAL__field full-width" bg-color="white" v-model="search" placeholder="Search or start a new conversation">
             <template v-slot:prepend>
-              <q-icon name="search" />
+              <i class="bi bi-search"></i> <!-- Icono de búsqueda dentro del input -->
             </template>
           </q-input>
         </q-toolbar>
@@ -130,21 +130,17 @@
               </q-item-section>
 
               <q-item-section>
-                <q-item-label lines="1">
-                  {{ conversation.person }}
-                </q-item-label>
+                <q-item-label lines="1">{{ conversation.person }}</q-item-label>
                 <q-item-label class="conversation__summary" caption>
-                  <q-icon name="check" v-if="conversation.sent" />
-                  <q-icon name="not_interested" v-if="conversation.deleted" />
+                  <i class="bi bi-check-lg" v-if="conversation.sent"></i> <!-- Icono de check de Bootstrap -->
+                  <i class="bi bi-x-circle" v-if="conversation.deleted"></i> <!-- Icono de mensaje eliminado -->
                   {{ conversation.caption }}
                 </q-item-label>
               </q-item-section>
 
               <q-item-section side>
-                <q-item-label caption>
-                  {{ conversation.time }}
-                </q-item-label>
-                <q-icon name="keyboard_arrow_down" />
+                <q-item-label caption>{{ conversation.time }}</q-item-label>
+                <i class="bi bi-chevron-down"></i> <!-- Icono de dropdown -->
               </q-item-section>
             </q-item>
           </q-list>
@@ -157,9 +153,16 @@
 
       <q-footer>
         <q-toolbar class="bg-grey-3 text-black row">
-          <q-btn round flat icon="insert_emoticon" class="q-mr-sm" aria-label="Emojis" />
+          <!-- Icono de emojis de Bootstrap -->
+          <q-btn round flat aria-label="Emojis">
+            <i class="bi bi-emoji-smile"></i>
+          </q-btn>
           <q-input rounded outlined dense class="WAL__field col-grow q-mr-sm" bg-color="white" v-model="message" placeholder="Type a message" />
-          <q-btn round flat icon="mic" aria-label="Voice message" />
+          
+          <!-- Icono de mensaje de voz de Bootstrap -->
+          <q-btn round flat aria-label="Voice message">
+            <i class="bi bi-mic"></i>
+          </q-btn>
         </q-toolbar>
       </q-footer>
     </q-layout>
@@ -296,4 +299,5 @@ export default {
   margin-top: 0!important
   font-size: 1.4rem
 </style>
+
 

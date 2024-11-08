@@ -43,7 +43,14 @@ body {
   }
 
 
+Cada vez que quieras actualizar tu sitio en GitHub Pages:
 
+Haz los cambios en tu código.
+Ejecuta quasar build.
+Cambia a la rama gh-pages.
+Copia los archivos de dist/spa a la raíz de gh-pages.
+Sube los cambios (git add ., git commit -m "mensaje", git push).
+Verifica el sitio en GitHub Pages.
 
 
 

@@ -6,10 +6,11 @@
           flat
           dense
           round
-          icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-        />
+        >
+          <i class="bi bi-list"></i> <!-- Icono de Bootstrap colocado dentro del botón -->
+        </q-btn>
 
         <q-toolbar-title>
           Proyecto Base

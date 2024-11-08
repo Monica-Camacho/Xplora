@@ -8,10 +8,18 @@
       infinite
       arrows
     >
+      <!-- local -->
+      <!-- 
       <q-carousel-slide :name="1" img-src="/src/assets/images/foto1.jpg" />
       <q-carousel-slide :name="2" img-src="/src/assets/images/foto2.jpg" />
       <q-carousel-slide :name="3" img-src="/src/assets/images/foto3.jpg"/>
       <q-carousel-slide :name="4" img-src="/src/assets/images/foto4.jpg" />
+      -->
+      <!-- GitHub -->
+      <q-carousel-slide :name="1" img-src="assets/images/foto1.jpg" />
+      <q-carousel-slide :name="2" img-src="assets/images/foto2.jpg" />
+      <q-carousel-slide :name="3" img-src="assets/images/foto3.jpg"/>
+      <q-carousel-slide :name="4" img-src="assets/images/foto4.jpg" /> 
     </q-carousel>
   </div>
 </template>

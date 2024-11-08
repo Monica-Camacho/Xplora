@@ -51,12 +51,12 @@ module.exports = configure(function (/* ctx */) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
+      vueRouterMode: 'hash', // usa 'hash' para evitar problemas de rutas en GitHub Pages
       publicPath: '/Xplora/',  // Cambia "Xplora" por el nombre exacto de tu repositorio en GitHub
       target: {
         browser: [ 'es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1' ],
         node: 'node20'
       },
-      vueRouterMode: 'hash', // usa 'hash' para evitar problemas de rutas en GitHub Pages
       vitePlugins: [
         ['vite-plugin-checker', {
           eslint: {

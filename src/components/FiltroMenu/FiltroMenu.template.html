@@ -1,0 +1,14 @@
+<div class="filtro-menu">
+  <h3 class="titulo">{{ title }}</h3>
+
+  <div v-for="(section, index) in sections" :key="index" class="categoria">
+    <h4 class="subtitulo">{{ section.title }}</h4>
+    <div v-for="(option, i) in section.options" :key="i" class="opcion">
+      <q-checkbox
+        :label="option"
+        v-model="selectedFilters[option]"
+        color="primary"
+      />
+    </div>
+  </div>
+</div>

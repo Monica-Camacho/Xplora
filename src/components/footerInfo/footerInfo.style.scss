@@ -1,16 +1,24 @@
 @import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
 
-/* Estilos generales del contenedor del footer */
-.footerContent {
+/* Estilos generales del contenedor del footerInfo */
+.footerInfo {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 180px; /* Aumenta el padding lateral para crear más espacio en los extremos */
   background-color: $color6;
   color: $color-text;
 }
 
+/* Estilo para las secciones de ancho igual con límite de ancho */
+.footerInfo .section {
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+  max-width: 30%; /* Limita el ancho de cada sección al 30% del contenedor */
+}
+
 /* Títulos de las secciones */
-.footerContent .section h3 {
+.footerInfo .section-title {
   font-size: $font-size-title;
   font-weight: $font-weight-bold;
   margin-bottom: 10px;
@@ -19,12 +27,12 @@
 }
 
 /* Estilos para las listas de enlaces */
-.footerContent .section ul {
+.footerInfo .list {
   list-style-type: none;
   padding: 0;
 }
 
-.footerContent .section ul li {
+.footerInfo .list-item {
   margin: 5px 0;
   font-size: $font-size-normal;
   display: flex;
@@ -34,23 +42,23 @@
 }
 
 /* Icono de chevron con Bootstrap Icons */
-.footerContent .section ul li i {
+.footerInfo .icon {
   margin-right: 5px;
   font-size: $font-size-normal;
   color: $color-text;
 }
 
-.footerContent .section ul li a {
+.footerInfo .link {
   color: inherit;
   text-decoration: none;
 }
 
-.footerContent .section ul li a:hover {
+.footerInfo .link:hover {
   text-decoration: underline;
 }
 
 /* Estilos para el texto de contacto */
-.footerContent .section p {
+.footerInfo .contact-text {
   margin: 5px 0;
   font-size: $font-size-small;
   color: $color-text;
@@ -59,13 +67,15 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .footerContent {
+  .footerInfo {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px; /* Reduce el padding en móviles */
   }
-  .footerContent .section {
+  .footerInfo .section {
     width: 100%;
+    max-width: none; /* Elimina el límite de ancho en móviles */
     margin-bottom: 20px;
   }
 }

@@ -1,40 +1,46 @@
-<div class="footerContent">
+<div class="footerInfo">
   <div class="section">
-    <h3>Información Legal</h3>
-    <ul>
-      <li>
-        <i class="bi bi-chevron-right"></i>
-        <a href="#">Términos y condiciones</a>
+    <h3 class="section-title">Información Legal</h3>
+    <ul class="list">
+      <li
+        v-for="link in legalLinksList"
+        :key="link.title"
+        class="list-item"
+        @click.prevent="navigate(link.link)"
+      >
+        <i class="bi bi-chevron-right icon"></i>
+        <a href="#" class="link">{{ link.title }}</a>
       </li>
-      <li>
-        <i class="bi bi-chevron-right"></i>
-        <a href="#">Política de privacidad</a>
-      </li>
-      <li><i class="bi bi-chevron-right"></i> <a href="#">Aviso legal</a></li>
     </ul>
   </div>
+
   <div class="section">
-    <h3>Enlaces rápidos</h3>
-    <ul>
-      <li><i class="bi bi-chevron-right"></i> <a href="#">Destinos</a></li>
-      <li><i class="bi bi-chevron-right"></i> <a href="#">Hospedaje</a></li>
-      <li><i class="bi bi-chevron-right"></i> <a href="#">Transporte</a></li>
-      <li><i class="bi bi-chevron-right"></i> <a href="#">Turismo</a></li>
-      <li><i class="bi bi-chevron-right"></i> <a href="#">Experiencias</a></li>
+    <h3 class="section-title">Enlaces rápidos</h3>
+    <ul class="list">
+      <li
+        v-for="link in linksList"
+        :key="link.title"
+        class="list-item"
+        @click.prevent="navigate(link.link)"
+      >
+        <i class="bi bi-chevron-right icon"></i>
+        <a href="#" class="link">{{ link.title }}</a>
+      </li>
     </ul>
   </div>
+
   <div class="section">
-    <h3>Contáctanos</h3>
-    <p>
+    <h3 class="section-title">Contáctanos</h3>
+    <p class="contact-text">
       ¿Tienes alguna duda o necesitas ayuda? No dudes en contactarnos a través
       de los siguientes medios:
     </p>
-    <p>Correo electrónico: soporte@xplora.com</p>
-    <p>Teléfono: +1 800 123 4567</p>
-    <p>
+    <p class="contact-text">Correo electrónico: soporte@xplora.com</p>
+    <p class="contact-text">Teléfono: +1 800 123 4567</p>
+    <p class="contact-text">
       Dirección: Calle Viajeros #123, Ciudad Global, Mundo. También puedes
-      visitar nuestra sección de <a href="#">Preguntas Frecuentes (FAQ)</a> para
-      resolver tus inquietudes más comunes.
+      visitar nuestra sección de Preguntas Frecuentes (FAQ) para resolver tus
+      inquietudes más comunes.
     </p>
   </div>
 </div>

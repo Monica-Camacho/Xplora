@@ -1,10 +1,8 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <!-- Encabezado principal con AppHeader y NavBar -->
-    <q-header elevated>
-      <AppHeader />
-      <NavBar />
-    </q-header>
+    <AppHeader />
+    <NavBar />
 
     <!-- Contenedor de la página principal -->
     <q-page-container>

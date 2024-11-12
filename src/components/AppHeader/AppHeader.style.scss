@@ -1,0 +1,51 @@
+@import 'src/css/app.scss';
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f5ef;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-size: 20px;
+  color: #ff7f50;
+  font-weight: bold;
+}
+
+.header-center {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.language, .contact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  color: black; /* Cambia el color de los iconos a negro */
+}
+
+.header-right i {
+  color: black; /* Color negro para los iconos individuales */
+}

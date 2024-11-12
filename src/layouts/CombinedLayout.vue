@@ -1,8 +1,9 @@
-<template> 
+<template>
   <q-layout view="lHh Lpr lFf">
-    <!-- Encabezado principal con NavBar incluido -->
+    <!-- Encabezado principal con AppHeader y NavBar -->
     <q-header elevated>
-      <NavBar />
+      <AppHeader /> <!-- Componente Header en la parte superior -->
+      <NavBar />    <!-- NavBar debajo del Header -->
     </q-header>
 
     <!-- Contenedor de la página principal -->
@@ -13,6 +14,8 @@
 </template>
 
 <script setup>
+import AppHeader from 'components/AppHeader/AppHeader.vue'; 
 import NavBar from 'components/navBar/NavBar.vue';
 </script>
+
 

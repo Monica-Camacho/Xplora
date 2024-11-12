@@ -9,8 +9,20 @@ const routes = [
       { path: "nombre", component: () => import("pages/NombrePage.vue") }, // Página "Nombre"
       {
         path: "mantenimiento",
-        component: () => import("pages/MantenimientoPage.vue"),
-      }, // Página "Nombre"
+        component: () => import("src/pages/MantenimientoPage.vue"),
+      },
+      {
+        path: "destinos",
+        component: () => import("src/pages/DestinosPage.vue"),
+      },
+      {
+        path: "turismo",
+        component: () => import("src/pages/TurismoPage.vue"),
+      },
+      {
+        path: "explorador",
+        component: () => import("pages/ExploradorPage.vue"),
+      }, // Página de Mapa Interactivo
     ],
   },
 

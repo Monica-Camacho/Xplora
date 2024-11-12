@@ -8,10 +8,10 @@ export default {
 
     // Lista de tabs con íconos y rutas
     const linksList = [
-      { title: "Destinos", icon: "bi bi-compass", link: "/" },
-      { title: "Hospedaje", icon: "bi bi-house-door", link: "/mantenimiento" },
+      { title: "Destinos", icon: "bi bi-compass", link: "/destinos" },
+      { title: "Hospedaje", icon: "bi bi-house-door", link: "/explorador" },
       { title: "Transporte", icon: "bi bi-airplane", link: "/" },
-      { title: "Turismo", icon: "bi bi-map", link: "/mantenimiento" },
+      { title: "Turismo", icon: "bi bi-map", link: "/turismo" },
       { title: "Experiencias", icon: "bi bi-journals", link: "/" },
       {
         title: "Inicio de sesión",

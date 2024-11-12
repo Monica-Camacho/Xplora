@@ -5,14 +5,14 @@
 //Tipografía de Texto
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-/* Aplica Quicksand al cuerpo de la página */
-body {
-    font-family: 'Quicksand', sans-serif;
-  }
-  
   /* Aplica Mulish a los títulos */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Mulish', sans-serif;
+  }
+
+  /* Aplica Quicksand al cuerpo de la página */
+  body {
+    font-family: 'Quicksand', sans-serif;
   }
 
 /* Define las variables de color */

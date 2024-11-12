@@ -1,0 +1,81 @@
+@import 'src/css/app.scss'; // Asegúrate de que la ruta sea correcta
+
+/* Contenedor de la barra de navegación */
+.nav-bar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color3; /* Fondo naranja que ocupa todo el ancho */
+  padding: 10px 119px; /* Padding adicional en los extremos */
+}
+
+/* Contenedor de cada botón para que tengan el mismo tamaño */
+.nav-button-wrapper {
+  flex: 1; /* Los tabs ocupan el mismo tamaño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botón de navegación individual */
+.nav-button {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s;
+  box-shadow: none;
+  width: 100%; /* Ocupa el 100% del contenedor */
+  height: 100%; /* Ocupa el 100% del contenedor */
+
+  /* Línea de subrayado para el tab activo */
+  &.q-btn--active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Ajusta la posición para que quede cerca del borde */
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #FF5733; /* Ajusta el color al deseado */
+    transform: scaleX(1); /* Línea visible en el tab activo */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #FF5733;
+    transform: scaleX(0); /* Línea oculta en tabs no activos */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1); /* Muestra la línea al hacer hover */
+  }
+}
+
+/* Icono y texto dentro de cada botón */
+.nav-icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-transform: capitalize;
+  box-shadow: none;
+}
+
+.nav-icon-text i {
+  font-size: 20px;
+  margin-bottom: 2px;
+  box-shadow: none;
+}
+
+.nav-icon-text span {
+  font-size: 12px;
+  font-weight: normal;
+}
+  

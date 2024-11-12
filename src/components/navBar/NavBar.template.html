@@ -1,0 +1,27 @@
+<div class="nav-bar-container">
+  <div 
+    v-for="link in linksList" 
+    :key="link.title" 
+    class="nav-button-wrapper"
+    @click="setActiveTab(link.title)" 
+  >
+    <q-btn
+      flat
+      round
+      dense
+      :to="link.link"
+      class="nav-button"
+      :class="{ 'q-btn--active': activeTab === link.title }"
+    >
+      <div class="nav-icon-text">
+        <i :class="link.icon"></i>
+        <span>{{ link.title }}</span>
+      </div>
+    </q-btn>
+  </div>
+</div>
+
+
+
+
+  

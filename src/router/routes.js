@@ -1,7 +1,7 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),  // Layout principal
+    component: () => import('layouts/CombinedLayout.vue'),  // Layout principal
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') },  // Página de inicio
       { path: 'pruebas', component: () => import('pages/PruebasPage.vue') },  // Página "Pruebas"

@@ -21,7 +21,9 @@
 .footerInfo .section-title {
   font-size: $font-size-title;
   font-weight: $font-weight-bold;
-  margin-bottom: 10px;
+  margin: 0; /* Elimina cualquier espacio extra en el título */
+  padding: 0; /* Asegúrate de que no haya padding en el título */
+  line-height: 1; /* Ajusta la altura de línea para reducir espacio vertical */
   color: $color-text;
   font-family: "Mulish", sans-serif;
 }

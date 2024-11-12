@@ -1,0 +1,44 @@
+@import "src/css/app.scss"; /* Asegúrate de que la ruta sea correcta */
+
+.footer-bar {
+  background-color: $color3; /* Cambiado a color3 */
+  padding: 10px;
+  text-align: center;
+  color: $color-text; /* Color del texto */
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+
+    .icon {
+      font-size: 24px; /* Tamaño de los íconos */
+      color: $color-text;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: adjust-color(
+          $color-text,
+          $lightness: -15%
+        ); /* Efecto al pasar el mouse */
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 10px; /* AQUI PARA EL TAMAÑO DE LETRAS*/
+    line-height: 0.01; /* Espaciado reducido entre líneas */
+
+    .link {
+      color: $color-text;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover {
+        color: adjust-color($color-text, $lightness: -15%);
+      }
+    }
+  }
+}

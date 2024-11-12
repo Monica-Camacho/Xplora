@@ -1,56 +1,62 @@
-@import "src/css/app.scss";
+@import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
 
+/* Estilos generales del contenedor del header */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff; /* Fondo blanco */
-  padding: 10px 20px;
+  background-color: #ffffff;
+  padding: 5px 10px; /* Reducido para disminuir el espacio azul en los bordes */
+  margin: 0; /* Asegura que no haya margen adicional */
+  box-sizing: border-box;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
+  margin: 0; /* Elimina margen extra */
 }
 
 .logo-img {
   height: 30px;
-  margin-right: 8px;
+  margin-right: 4px; /* Reducido para disminuir el espacio a la derecha del logo */
 }
 
 .logo-text {
-  font-family: "Mulish", sans-serif; /* Aplica Mulish a la logo-text */
+  font-family: "Mulish", sans-serif;
   font-size: 28px;
-  color: $color4; /* Usando una variable de color llamativa */
+  color: $color4;
   font-weight: $font-weight-bold;
 }
 
 .header-center {
   display: flex;
-  gap: 20px;
-  font-size: $font-size-title; /* Usando tamaño de fuente para títulos */
+  gap: 10px; /* Reducido para disminuir el espacio entre elementos en el centro */
+  font-size: $font-size-title;
   color: $color-text;
-  font-family: "Quicksand", sans-serif; /* Aplica Quicksand a los elementos del centro */
+  font-family: "Quicksand", sans-serif;
+  margin: 0; /* Elimina margen adicional */
 }
 
 .language,
 .contact {
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-family: "Quicksand", sans-serif; /* Aplica Quicksand a español y contacto */
-  font-size: 16px; /* Tamaño de fuente específico de 16px */
+  gap: 3px; /* Reducido para acercar el icono y el texto */
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
   color: $color-text;
 }
 
 .header-right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px; /* Reducido para disminuir el espacio entre los iconos */
   font-size: 20px;
-  color: $color-text; /* Color de texto global para iconos */
+  color: $color-text;
+  margin: 0; /* Elimina margen adicional */
 }
 
 .header-right i {
-  color: $color-text; /* Color negro para los iconos individuales */
+  color: $color-text;
 }

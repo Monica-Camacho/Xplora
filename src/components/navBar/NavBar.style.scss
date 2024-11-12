@@ -1,11 +1,11 @@
-@import 'src/css/app.scss'; // Asegúrate de que la ruta sea correcta
+@import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
 
 /* Contenedor de la barra de navegación */
 .nav-bar-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: $color3; /* Fondo naranja que ocupa todo el ancho */
+  background-color: $color3; /* Fondo con variable global */
   padding: 10px 119px; /* Padding adicional en los extremos */
 }
 
@@ -19,9 +19,10 @@
 
 /* Botón de navegación individual */
 .nav-button {
-  color: black;
+  color: $color-text; /* Usando el color de texto global */
   text-align: center;
-  font-size: 14px;
+  font-size: 9px; /* NO SE PERO AQUI CAMBIO LA ALTURA DE LA BARRRITA*/
+  font-family: "Quicksand", sans-serif; /* Usando Quicksand */
   position: relative;
   transition: color 0.3s;
   box-shadow: none;
@@ -30,25 +31,25 @@
 
   /* Línea de subrayado para el tab activo */
   &.q-btn--active::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -2px; /* Ajusta la posición para que quede cerca del borde */
     left: 0;
     right: 0;
     height: 3px;
-    background-color: #FF5733; /* Ajusta el color al deseado */
+    background-color: $color4; /* Usando variable global para el color activo */
     transform: scaleX(1); /* Línea visible en el tab activo */
     transition: transform 0.3s ease-in-out;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
     right: 0;
     height: 3px;
-    background-color: #FF5733;
+    background-color: $color4;
     transform: scaleX(0); /* Línea oculta en tabs no activos */
     transition: transform 0.3s ease-in-out;
   }
@@ -63,7 +64,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 12px;
+  font-size: 10px; /* TAMAÑO DE ICONOS */
+  font-family: "Quicksand", sans-serif; /* Usando Quicksand */
   text-transform: capitalize;
   box-shadow: none;
 }
@@ -75,7 +77,6 @@
 }
 
 .nav-icon-text span {
-  font-size: 12px;
-  font-weight: normal;
+  font-size: 16px; /* AQUI CAMBIO EL TAMAÑO DE LTRAS */
+  font-weight: $font-weight-normal;
 }
-  

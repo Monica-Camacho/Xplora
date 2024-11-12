@@ -1,25 +1,86 @@
 // app global css in SCSS form
 
-//Tipografía de Títulos
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
-//Tipografía de Texto
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+// Importación de tipografía para Títulos
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-  /* Aplica Mulish a los títulos */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Mulish', sans-serif;
-  }
+// Importación de tipografía para Texto
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-  /* Aplica Quicksand al cuerpo de la página */
-  body {
-    font-family: 'Quicksand', sans-serif;
-  }
+// Variables de colores
+$color1: #ffa85c; /* RGB: 255, 168, 92 */
+$color2: #f0c135; /* RGB: 240, 193, 53 */
+$color3: #f0a835; /* RGB: 240, 168, 53 */
+$color4: #f06d35; /* RGB: 240, 109, 53 */
+$color5: #f5dc3b; /* RGB: 245, 220, 59 */
+$color6: #f0c684; /* RGB: 240, 198, 132 */
+$color-gray: #d9d9d9; /* Fondo gris */
+$color-text: #000; /* Color negro para el texto */
 
-/* Define las variables de color */
-$color1: #FFA85C;  /* RGB: 255, 168, 92 */
-$color2: #F0C135;  /* RGB: 240, 193, 53 */
-$color3: #F0A835;  /* RGB: 240, 168, 53 */
-$color4: #F06D35;  /* RGB: 240, 109, 53 */
-$color5: #F5DC3B;  /* RGB: 245, 220, 59 */
-$color6: #F0C684;  /* RGB: 240, 198, 132 */
-  
+// Variables de tamaño de fuente
+$font-size-title: 16px;
+$font-size-subtitle: 14px;
+$font-size-normal: 12px;
+$font-size-small: 10px;
+
+// Variables de peso de fuente
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-normal: 400;
+
+// Aplicación general de fuentes
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: $font-size-normal;
+  font-weight: $font-weight-normal;
+  color: $color-text;
+}
+
+// Títulos principales
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mulish", sans-serif;
+  color: $color-text;
+}
+
+// Tamaños y pesos específicos
+
+// Título Principal
+.title {
+  font-size: $font-size-title;
+  font-weight: $font-weight-bold;
+}
+
+// Subtítulo o título de menú
+.subtitle {
+  font-size: $font-size-subtitle;
+  font-weight: $font-weight-semi-bold;
+}
+
+// Texto normal
+.normal-text {
+  font-size: $font-size-normal;
+  font-weight: $font-weight-normal;
+}
+
+// Texto pequeño
+.small-text {
+  font-size: $font-size-small;
+  font-weight: $font-weight-normal;
+}
+
+// Estilos específicos para el filtro
+.filter-title {
+  @extend .title;
+}
+
+.filter-subtitle {
+  @extend .subtitle;
+}
+
+.filter-option {
+  @extend .normal-text;
+}

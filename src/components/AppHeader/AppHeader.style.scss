@@ -1,12 +1,11 @@
-@import 'src/css/app.scss';
+@import "src/css/app.scss";
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f9f5ef;
+  background-color: #ffffff; /* Fondo blanco */
   padding: 10px 20px;
-  border-bottom: 1px solid #333;
 }
 
 .header-logo {
@@ -20,22 +19,28 @@
 }
 
 .logo-text {
-  font-size: 20px;
-  color: #ff7f50;
-  font-weight: bold;
+  font-family: "Mulish", sans-serif; /* Aplica Mulish a la logo-text */
+  font-size: 28px;
+  color: $color4; /* Usando una variable de color llamativa */
+  font-weight: $font-weight-bold;
 }
 
 .header-center {
   display: flex;
   gap: 20px;
-  font-size: 16px;
-  color: #333;
+  font-size: $font-size-title; /* Usando tamaño de fuente para títulos */
+  color: $color-text;
+  font-family: "Quicksand", sans-serif; /* Aplica Quicksand a los elementos del centro */
 }
 
-.language, .contact {
+.language,
+.contact {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-family: "Quicksand", sans-serif; /* Aplica Quicksand a español y contacto */
+  font-size: 16px; /* Tamaño de fuente específico de 16px */
+  color: $color-text;
 }
 
 .header-right {
@@ -43,9 +48,9 @@
   align-items: center;
   gap: 15px;
   font-size: 20px;
-  color: black; /* Cambia el color de los iconos a negro */
+  color: $color-text; /* Color de texto global para iconos */
 }
 
 .header-right i {
-  color: black; /* Color negro para los iconos individuales */
+  color: $color-text; /* Color negro para los iconos individuales */
 }

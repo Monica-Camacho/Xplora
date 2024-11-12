@@ -1,17 +1,21 @@
+@import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
+
 .bttn-amarillo {
-    background-color: #F0C135;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-    font-family: 'Mulish', sans-serif;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
-    &:hover {
-      background-color: rgba(240, 193, 53, 0.9); // Reduce un poco la opacidad para "oscurecer"
-    }
+  background-color: $color2;
+  color: $color-text;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: $font-size-title;
+  font-family: "Mulish", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(
+      $color2,
+      0.9
+    ); // Reduce un poco la opacidad para "oscurecer"
   }
-  
+}

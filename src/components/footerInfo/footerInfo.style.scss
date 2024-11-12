@@ -1,0 +1,71 @@
+@import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
+
+/* Estilos generales del contenedor del footer */
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $color6;
+  color: $color-text;
+}
+
+/* Títulos de las secciones */
+.footerContent .section h3 {
+  font-size: $font-size-title;
+  font-weight: $font-weight-bold;
+  margin-bottom: 10px;
+  color: $color-text;
+  font-family: "Mulish", sans-serif;
+}
+
+/* Estilos para las listas de enlaces */
+.footerContent .section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footerContent .section ul li {
+  margin: 5px 0;
+  font-size: $font-size-normal;
+  display: flex;
+  align-items: center;
+  color: $color-text;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Icono de chevron con Bootstrap Icons */
+.footerContent .section ul li i {
+  margin-right: 5px;
+  font-size: $font-size-normal;
+  color: $color-text;
+}
+
+.footerContent .section ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footerContent .section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el texto de contacto */
+.footerContent .section p {
+  margin: 5px 0;
+  font-size: $font-size-small;
+  color: $color-text;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footerContent .section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

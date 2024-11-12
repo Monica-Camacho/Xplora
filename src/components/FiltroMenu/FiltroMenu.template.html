@@ -3,12 +3,20 @@
 
   <div v-for="(section, index) in sections" :key="index" class="categoria">
     <h4 class="subtitulo">{{ section.title }}</h4>
-    <div v-for="(option, i) in section.options" :key="i" class="opcion">
-      <q-checkbox
-        :label="option"
+    <div
+      v-for="(option, i) in section.options"
+      :key="i"
+      class="opcion form-check"
+    >
+      <input
+        class="form-check-input custom-checkbox"
+        type="checkbox"
+        :id="`checkbox-${index}-${i}`"
         v-model="selectedFilters[option]"
-        color="primary"
       />
+      <label class="form-check-label" :for="`checkbox-${index}-${i}`"
+        >{{ option }}</label
+      >
     </div>
   </div>
 </div>

@@ -1,9 +1,9 @@
 <template>
-  <q-page class="flex flex-start">
+  <q-page class="page-container">
+    <!-- Contenedor de filtros a la izquierda -->
     <div class="column-center">
       <!-- Menús de filtros en columna -->
       <div class="filter-column">
-        <!-- Primer menú de filtro -->
         <FiltroMenu
           title="Filtrar por:"
           :sections="[
@@ -38,13 +38,18 @@
         />
       </div>
     </div>
+
+    <!-- Contenedor de la imagen al lado derecho -->
+    <div class="image-container">
+      <img src="assets/images/Mapa.jpg" alt="Destinos" />
+    </div>
   </q-page>
 </template>
 
 <script setup>
 import bttnAmarillo from "src/components/bttnAmarillo/bttnAmarillo.vue";
 import FiltroMenu from "src/components/FiltroMenu/FiltroMenu.vue";
-import "./explorador.css";
+import "./Explorador.scss";
 
 defineOptions({
   name: "ExploradorPage",

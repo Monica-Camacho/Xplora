@@ -1,0 +1,40 @@
+/* Archivo explorador.scss */
+
+.page-container {
+  display: flex;
+  flex-direction: row; /* Asegura que los elementos estén en fila */
+  align-items: flex-start;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  width: 100%;
+  padding: 20px; /* Añade un poco de padding si es necesario */
+  box-sizing: border-box;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 250px; /* Limita el ancho del contenedor de filtros */
+  max-width: 250px;
+}
+
+.filter-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.image-container {
+  flex: 1; /* Permite que la imagen ocupe todo el espacio restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.image-container img {
+  width: 100%; /* La imagen ocupará el ancho completo de su contenedor */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+}

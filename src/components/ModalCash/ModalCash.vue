@@ -27,6 +27,18 @@
               <p class="payment-text">Pago en efectivo</p>
             </div>
           </div>
+
+          <div class="extra-space"></div>
+          <div class="extra-space"></div>
+          <div class="extra-space"></div>
+          <div class="extra-space"></div>
+
+          <!-- Sección para seleccionar el punto de pago, debajo de las opciones -->
+          <div class="select-payment-point">
+            <h3 class="subtitle">Selecciona el punto de pago</h3>
+            <!-- Botón gris (bttnGris) -->
+            <bttnGris label="Seleccionar" class="select-button" />
+          </div>
         </div>
 
         <!-- Columna derecha centrada -->
@@ -73,6 +85,7 @@
 <script setup>
 import { ref, watch } from "vue";
 import bttnAmarillo from "src/components/bttnAmarillo/bttnAmarillo.vue";
+import bttnGris from "src/components/bttnGris/bttnGris.vue";
 
 const props = defineProps({
   modelValue: Boolean,

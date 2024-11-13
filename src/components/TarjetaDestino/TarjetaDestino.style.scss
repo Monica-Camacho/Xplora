@@ -1,0 +1,74 @@
+@import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
+/* Archivo de estilos para el componente TarjetaDestino */
+
+/* Estilo de la tarjeta */
+.tarjeta-destino {
+  display: flex;
+  align-items: center;
+  background-color: #efedea; /* Fondo gris del CSS global */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  max-width: 900px; /* Ancho de la tarjeta */
+  height: 150px; /* Altura de la tarjeta */
+  overflow: hidden;
+  margin: 10px; /* Asegura que no haya margen adicional alrededor */
+}
+
+/* Imagen de la tarjeta */
+.destino-imagen {
+  width: auto;
+  height: 100%; /* La imagen ocupa toda la altura de la tarjeta */
+  border-radius: 12px 0 0 12px; /* Borde redondeado en el lado izquierdo */
+  object-fit: cover;
+}
+
+/* Contenido de la tarjeta */
+.destino-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Espacio entre elementos dentro del contenido */
+  margin: 0;
+  padding: 12px;
+  flex: 1; /* Toma el espacio restante */
+}
+
+/* Estilo para el lugar (ubicación) */
+.destino-lugar {
+  font-size: 12px;
+  font-weight: $font-weight-semi-bold;
+  color: $color-text;
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+/* Estilo para el título */
+.destino-titulo {
+  font-size: 14px;
+  font-weight: $font-weight-bold;
+  color: $color-text;
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Estilo para la descripción */
+.destino-descripcion {
+  font-size: 12px;
+  color: $color-text;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Contenedor del botón */
+.boton-contenedor {
+  margin-top: 6px;
+  align-self: flex-end; /* Alinea el botón a la derecha */
+}
+
+/* Estilo del botón pequeño */
+.boton-pequeno button {
+  padding: 6px 12px; /* Tamaño compacto del botón */
+  font-size: 14px;
+  border-radius: 8px;
+}

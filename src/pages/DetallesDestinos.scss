@@ -1,0 +1,12 @@
+/* Archivo: DetallesDestinos.css */
+@import "src/css/app.scss"; /* Asegúrate de que la ruta sea correcta */
+
+.titulo-seccion {
+  color: $color4; /* Aplica el color definido en app.scss */
+  font-size: $font-size-title; /* Aplica el tamaño de fuente definido en app.scss */
+  font-family: "Mulish", sans-serif; /* Aplica la fuente Mulish para los títulos */
+  font-weight: $font-weight-bold; /* Aplica el peso de fuente definido */
+  margin-top: -10px; /* Reduce el espacio superior */
+  margin-bottom: 10px; /* Ajusta el margen inferior según necesites */
+  margin-left: 10px; /* Añade un poco de margen a la izquierda */
+}

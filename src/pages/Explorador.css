@@ -1,0 +1,15 @@
+/* Archivo explorador.css */
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px 0px 40px 80px; /* Ajusta el margen según necesites Arriba, derecha, abajo, izquierda */
+}
+
+.filter-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}

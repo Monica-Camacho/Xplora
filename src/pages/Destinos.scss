@@ -1,0 +1,98 @@
+/* Archivo: DetallesDestinos.css */
+@import "src/css/app.scss"; /* Asegúrate de que la ruta sea correcta */
+
+/* Título de la sección "Actividades recomendadas" */
+.titulo-seccion {
+  color: $color4; /* Aplica el color definido en app.scss */
+  font-size: $font-size-title; /* Aplica el tamaño de fuente definido en app.scss */
+  font-family: "Mulish", sans-serif; /* Aplica la fuente Mulish para los títulos */
+  font-weight: $font-weight-bold; /* Aplica el peso de fuente definido */
+  margin: 0; /* Elimina los márgenes */
+  padding: 0; /* Elimina el padding */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.contenido-principal {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  gap: 15px; /* Reduce el espacio entre los elementos */
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo */
+  padding: 0 20px; /* Añade padding horizontal, sin espacio superior ni inferior */
+}
+
+/* Estilos para el contenedor de botones y búsqueda */
+.buscar-y-botones {
+  display: flex; /* Alinea los elementos horizontalmente */
+  gap: 15px; /* Reduce el espacio entre los botones y el campo de búsqueda */
+  align-items: center; /* Centra los elementos verticalmente */
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo */
+}
+
+/* Estilos para los botones */
+.botones-gris {
+  display: flex; /* Alinea los botones horizontalmente */
+  gap: 10px; /* Espacio entre los botones */
+  flex-shrink: 0; /* Impide que los botones se reduzcan de tamaño */
+}
+
+/* El campo de búsqueda ocupa el espacio restante */
+.buscar-contenedor {
+  flex-grow: 1;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas-contenedor {
+  display: grid; /* Usamos grid para una mejor distribución */
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas para las tarjetas */
+  gap: 15px; /* Espacio entre las tarjetas */
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 10px; /* Espacio superior ajustado */
+}
+
+/* Aseguramos que cada tarjeta ocupe todo el espacio disponible */
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: auto; /* Permite que la tarjeta crezca según el contenido */
+  min-height: 250px; /* Asegura que las tarjetas no sean demasiado pequeñas */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  overflow: hidden; /* Impide que el contenido se desborde fuera de la tarjeta */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.tarjeta img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+/* Ajuste del contenido de la tarjeta */
+.tarjeta .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+  padding: 10px;
+  overflow: hidden; /* Evita que el texto se desborde fuera de la tarjeta */
+  height: auto; /* Permite que el contenido crezca según el tamaño del texto */
+}
+
+/* Aseguramos que los botones o enlaces dentro de la tarjeta se ajusten */
+.tarjeta .contenido a {
+  margin-top: auto; /* Empuja el botón hacia el fondo de la tarjeta */
+}
+
+.card-images-container {
+  display: flex;
+  gap: 16px; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centrar las tarjetas horizontalmente */
+  margin-top: 20px; /* Espaciado superior opcional */
+}

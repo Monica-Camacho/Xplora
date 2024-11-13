@@ -50,6 +50,10 @@
               <span>Total de pago</span>
               <span>MXN $12700</span>
             </div>
+            <div class="extra-space"></div>
+            <div class="extra-space"></div>
+            <div class="extra-space"></div>
+            <div class="extra-space"></div>
           </div>
 
           <!-- Botón de Pagar alineado debajo del contenedor de detalles -->

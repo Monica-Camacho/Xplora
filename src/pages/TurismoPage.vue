@@ -1,61 +1,73 @@
 <template>
-  <q-page class="error-page flex flex-center text-center">
-    <div style="display: flex; flex-direction: column; align-items: center">
-      <!-- Icono brush de Bootstrap Icons, ahora más grande y en negro -->
-      <i class="bi bi-brush icon"></i>
+  <q-page
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    "
+  >
+    <!-- Contenedor para los botones y el campo de búsqueda, alineados horizontalmente y centrados verticalmente -->
+    <div class="buscar-y-botones">
+      <!-- Botones alineados horizontalmente -->
+      <div class="botones-gris">
+        <bttnGris label="Precio" class="boton" />
+        <bttnGris label="Duración" class="boton" />
+        <bttnGris label="Horario" class="boton" />
+      </div>
 
-      <div class="main-text">Página en Mantenimiento</div>
-      <div class="sub-text">layout de Turismo</div>
+      <!-- Componente de búsqueda -->
+      <div class="buscar-contenedor">
+        <BuscarDestino />
+      </div>
+    </div>
 
-      <q-btn
-        class="q-mt-xl"
-        :color="'white'"
-        :text-color="'var(--color-text)'"
-        unelevated
-        to="/"
-        label="Pagina Principal"
-        no-caps
-      />
+    <div class="contenido-principal">
+      <!-- Contenedor de tarjetas con título -->
+      <h2 class="titulo-seccion">Actividades recomendadas</h2>
+    </div>
+
+    <div class="contenido-principal">
+      <!-- Contenedor de tarjetas -->
+      <div class="tarjetas-contenedor">
+        <TarjetaDestino
+          lugar="Ciudad de México"
+          titulo="Majestuosidad de Teotihuacán"
+          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
+          imagen="assets/images/tarjetadestinos/destinos.jpg"
+        />
+        <TarjetaDestino
+          lugar="Ciudad de México"
+          titulo="Majestuosidad de Teotihuacán"
+          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
+          imagen="assets/images/tarjetadestinos/destinos.jpg"
+        />
+        <TarjetaDestino
+          lugar="Ciudad de México"
+          titulo="Majestuosidad de Teotihuacán"
+          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
+          imagen="assets/images/tarjetadestinos/destinos.jpg"
+        />
+        <TarjetaDestino
+          lugar="Ciudad de México"
+          titulo="Majestuosidad de Teotihuacán"
+          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
+          imagen="assets/images/tarjetadestinos/destinos.jpg"
+        />
+        <TarjetaDestino
+          lugar="Ciudad de México"
+          titulo="Majestuosidad de Teotihuacán"
+          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
+          imagen="assets/images/tarjetadestinos/destinos.jpg"
+        />
+      </div>
     </div>
   </q-page>
 </template>
 
 <script setup>
-defineOptions({
-  name: "ErrorNotFound",
-});
+import TarjetaDestino from "src/components/TarjetaActividades/TarjetaActividades.vue";
+import bttnGris from "src/components/bttnGris/bttnGris.vue";
+import BuscarDestino from "src/components/BuscarDestino/BuscarDestino.vue"; // Asegúrate de que la ruta sea correcta
+import "./Turismo.scss";
 </script>
-
-<style scoped lang="scss">
-@import "src/css/app.scss"; /* Asegúrate de que la ruta sea correcta */
-
-// Estilos específicos para la página de error
-.error-page {
-  background-color: $color5; /* Fondo de la página */
-  height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
-  color: $color-text; /* Color del texto en negro */
-}
-
-.icon {
-  font-size: 100px; /* Tamaño grande para el ícono */
-  color: $color-text; /* Ícono en negro */
-  margin-bottom: 20px;
-}
-
-.main-text {
-  font-family: "Mulish", sans-serif; /* Fuente de título */
-  font-size: 32px; /* Tamaño de título mayor */
-  font-weight: $font-weight-bold;
-  color: $color-text; /* Texto en negro */
-  margin-bottom: 10px;
-}
-
-.sub-text {
-  font-family: "Quicksand", sans-serif; /* Fuente de texto */
-  font-size: 24px; /* Tamaño de texto menor */
-  font-weight: $font-weight-normal;
-  color: $color-text; /* Texto en negro */
-  opacity: 0.8;
-  margin-bottom: 20px;
-}
-</style>

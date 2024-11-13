@@ -1,0 +1,14 @@
+<!-- components/TarjetaDestino/TarjetaDestino.template.html -->
+<div class="tarjeta-destino">
+  <img class="destino-imagen" :src="imagen" :alt="titulo" />
+
+  <div class="destino-contenido">
+    <p class="destino-lugar">{{ lugar }}</p>
+    <h3 class="destino-titulo">{{ titulo }}</h3>
+    <p class="destino-descripcion">{{ descripcion }}</p>
+
+    <div class="boton-contenedor">
+      <bttnAmarillo class="boton-pequeno" label="Leer más" />
+    </div>
+  </div>
+</div>

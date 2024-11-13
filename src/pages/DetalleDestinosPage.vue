@@ -66,6 +66,18 @@
           descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
           imagen="assets/images/tarjetadestinos/destinos.jpg"
         />
+        <TarjetaDestino
+          lugar="Ciudad de México"
+          titulo="Majestuosidad de Teotihuacán"
+          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
+          imagen="assets/images/tarjetadestinos/destinos.jpg"
+        />
+        <TarjetaDestino
+          lugar="Ciudad de México"
+          titulo="Majestuosidad de Teotihuacán"
+          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
+          imagen="assets/images/tarjetadestinos/destinos.jpg"
+        />
       </div>
     </div>
   </q-page>

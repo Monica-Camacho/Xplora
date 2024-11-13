@@ -16,7 +16,7 @@ export default {
       },
       { title: "Transporte", icon: "bi bi-airplane", link: "/explorador" },
       { title: "Turismo", icon: "bi bi-map", link: "/turismo" },
-      { title: "Experiencias", icon: "bi bi-journals", link: "/" },
+      { title: "Experiencias", icon: "bi bi-journals", link: "/whatsapp" },
       {
         title: "Inicio de sesión",
         icon: "bi bi-person",

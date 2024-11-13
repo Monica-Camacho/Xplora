@@ -1,22 +1,20 @@
 <template>
-  <q-page padding>
-    <q-tabs
-      class="tab-menu"
-      v-model="selectedTab"
-      shrink
-      align="left"
-      active-color="#F06D35"
-      indicator-color="#F06D35"
-    >
-      <q-tab name="north-america" label="América del Norte" class="tab-item" />
-      <q-tab name="south-america" label="América del Sur" class="tab-item" />
-      <q-tab name="central-america" label="América Central" class="tab-item" />
-      <q-tab name="europe" label="Europa" class="tab-item" />
-      <q-tab name="asia" label="Asia" class="tab-item" />
-      <q-tab name="africa" label="África" class="tab-item" />
-      <q-tab name="oceania" label="Oceanía" class="tab-item" />
-    </q-tabs>
-  </q-page>
+  <q-tabs
+    class="tab-menu"
+    v-model="selectedTab"
+    shrink
+    align="left"
+    active-color="#F06D35"
+    indicator-color="#F06D35"
+  >
+    <q-tab name="north-america" label="América del Norte" class="tab-item" />
+    <q-tab name="south-america" label="América del Sur" class="tab-item" />
+    <q-tab name="central-america" label="América Central" class="tab-item" />
+    <q-tab name="europe" label="Europa" class="tab-item" />
+    <q-tab name="asia" label="Asia" class="tab-item" />
+    <q-tab name="africa" label="África" class="tab-item" />
+    <q-tab name="oceania" label="Oceanía" class="tab-item" />
+  </q-tabs>
 </template>
 
 <script>
@@ -35,11 +33,11 @@ export default {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 15px auto;
+  margin: 15px auto 0; /* Quita margen inferior */
   padding: 0 20px;
   overflow: hidden;
   white-space: nowrap;
-  border-bottom: 1px solid #d9d9d9; /* Línea gris debajo de todas las pestañas */
+  border-bottom: 1px solid #d9d9d9;
 }
 
 /* Estilo para cada pestaña */
@@ -70,5 +68,12 @@ export default {
 
 .tab-item:hover {
   color: #f06d35;
+}
+.q-page {
+  padding-bottom: 0; /* Ajusta según sea necesario */
+}
+.q-tabs {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 </style>

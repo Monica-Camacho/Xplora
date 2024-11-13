@@ -71,6 +71,12 @@
           imageUrl="assets/images/tarjetadestinos/destinos.jpg"
           activityName="Tour por la Ciudad"
           duration="3.5 Horas - Grupo"
+          :showIcon="true"
+        />
+        <CardImage
+          imageUrl="assets/images/tarjetadestinos/destinos.jpg"
+          activityName="Tour por la Ciudad"
+          duration="3.5 Horas - Grupo"
           :showIcon="false"
         />
         <CardImage

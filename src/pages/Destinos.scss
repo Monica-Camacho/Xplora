@@ -82,7 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0; /* Asegúrate de que no tenga padding */
+  padding: 0px 0 30px 0; /* 10px arriba, 0 a los lados, 30px abajo */
   margin: 0; /* Asegúrate de que no tenga margen */
   height: auto; /* Ajusta la altura según el contenido */
   max-height: 200px; /* Opcional: Define un máximo de altura si lo deseas */

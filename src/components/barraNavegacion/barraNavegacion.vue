@@ -8,21 +8,13 @@
       active-color="#F06D35"
       indicator-color="#F06D35"
     >
-      <q-tab name="overview" label="Vista General" class="tab-item" />
-      <q-tab name="info-prices" label="Info y precios" class="tab-item" />
-      <q-tab name="services" label="Servicios" class="tab-item" />
-      <q-tab
-        name="important-info"
-        label="Información Importante"
-        class="tab-item"
-      />
-      <q-tab name="policies" label="Políticas" class="tab-item" />
-      <q-tab
-        name="customer-experiences"
-        label="Experiencias de los clientes"
-        class="tab-item"
-        @click="openDrawer"
-      />
+      <q-tab name="north-america" label="América del Norte" class="tab-item" />
+      <q-tab name="south-america" label="América del Sur" class="tab-item" />
+      <q-tab name="central-america" label="América Central" class="tab-item" />
+      <q-tab name="europe" label="Europa" class="tab-item" />
+      <q-tab name="asia" label="Asia" class="tab-item" />
+      <q-tab name="africa" label="África" class="tab-item" />
+      <q-tab name="oceania" label="Oceanía" class="tab-item" />
     </q-tabs>
   </q-page>
 </template>
@@ -31,13 +23,8 @@
 export default {
   data() {
     return {
-      selectedTab: "overview", // Tab seleccionada por defecto
+      selectedTab: "north-america",
     };
-  },
-  methods: {
-    openDrawer() {
-      console.log("Drawer de experiencias abierto");
-    },
   },
 };
 </script>
@@ -52,6 +39,7 @@ export default {
   padding: 0 20px;
   overflow: hidden;
   white-space: nowrap;
+  border-bottom: 1px solid #d9d9d9; /* Línea gris debajo de todas las pestañas */
 }
 
 /* Estilo para cada pestaña */
@@ -64,6 +52,7 @@ export default {
   cursor: pointer;
   padding: 10px 15px;
   position: relative;
+  text-transform: capitalize; /* Hace que solo la primera letra de cada palabra sea mayúscula */
 }
 
 /* Línea naranja debajo de la pestaña activa */
@@ -71,7 +60,8 @@ export default {
   height: 3px;
   background-color: #f06d35;
   border-radius: 2px;
-  bottom: 0;
+  width: 100px; /* Ajusta el ancho del indicador si es necesario */
+  margin: 0 auto; /* Centra el indicador debajo de la pestaña activa */
 }
 
 .tab-item.q-tab--active {

@@ -17,6 +17,10 @@
         class="q-mb-md"
       />
 
+      <!-- Botón Gris -->
+      <bttnGris label="Precios" />
+      <bttnAmarillo label="Precios" />
+
       <!-- Modal de Pago -->
       <ModalPago v-model="showModalPago" />
 
@@ -30,6 +34,8 @@
 import { ref } from "vue";
 import ModalPago from "src/components/ModalPago/ModalPago.vue"; // Asegúrate de que la ruta sea correcta
 import ModalCash from "src/components/ModalCash/ModalCash.vue"; // Asegúrate de que la ruta sea correcta
+import bttnGris from "src/components/bttnGris/bttnGris.vue"; // Asegúrate de que la ruta sea correcta
+import bttnAmarillo from "src/components/bttnAmarillo/bttnAmarillo.vue"; // Asegúrate de que la ruta sea correcta
 
 const showModalPago = ref(false); // Controla la visibilidad del modal de pago
 const showModalCash = ref(false); // Controla la visibilidad del modal de efectivo

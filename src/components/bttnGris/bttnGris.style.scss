@@ -1,0 +1,31 @@
+@import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
+
+.bttn-gris {
+  background-color: #eae8e5; /* Gris claro */
+  color: #5b5552; /* Gris más oscuro para el texto */
+  padding: 6px 20px; /* Reducir el padding en el eje vertical */
+  border-radius: 10px;
+  border: none;
+  font-size: 14px; /* Tamaño de texto especificado en 14px */
+  font-family: "Mulish", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el ícono y el texto */
+
+  &:hover {
+    background-color: rgba(
+      234,
+      232,
+      229,
+      0.9
+    ); /* Color gris claro con menor opacidad */
+  }
+
+  i {
+    font-size: 20px; /* Tamaño más grande del ícono */
+    color: inherit; /* Usa el color del texto */
+  }
+}

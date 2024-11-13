@@ -1,128 +1,143 @@
-/* Archivo: Destinos.scss */
 @import "src/css/app.scss"; /* Asegúrate de que la ruta sea correcta */
 
-/* Título de la sección "Actividades recomendadas" */
-.titulo-seccion {
-  color: $color4; /* Aplica el color definido en app.scss */
-  font-size: $font-size-title; /* Aplica el tamaño de fuente definido en app.scss */
-  font-family: "Mulish", sans-serif; /* Aplica la fuente Mulish para los títulos */
-  font-weight: $font-weight-bold; /* Aplica el peso de fuente definido */
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
-/* Contenedor principal */
-.contenido-principal {
+/* Estilos para completo-1 */
+.completo-1 {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
+  justify-content: center; /* Centra horizontalmente */
+  margin: 20px 250px; /* 20px arriba y abajo, 200px a los lados */
+
+  .buscar-contenedor {
+    flex-grow: 1;
+    /* Otros estilos que necesites para buscar-contenedor */
+  }
 }
 
-/* Estilos para el contenedor de búsqueda y botones */
-.buscar-y-botones {
+/* Estilos para titulo-1 */
+.titulo-1 {
+  .titulo-seccion {
+    color: $color4;
+    font-size: $font-size-title;
+    font-family: "Mulish", sans-serif;
+    font-weight: $font-weight-bold;
+    margin: 0px 80px; /* Margen superior*/
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+}
+
+/* Estilos para completo-2 */
+.completo-2 {
   display: flex;
-  gap: 15px;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
+  gap: 20px; /* Espacio de 20px entre cada tarjeta */
+  flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea si no hay espacio */
+  padding: 0 20px; /* 20px de padding en los lados izquierdo y derecho */
+
+  /* Estilos de CardTittle */
+  .card-tittle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+
+  .card-tittle__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-tittle__nombre {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    max-width: calc(100% - 20px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
-/* Estilos para los botones grises */
-.botones-gris {
+/* Estilos para titulo-2 */
+.titulo-2 {
+  .titulo-seccion {
+    color: $color4;
+    font-size: $font-size-title;
+    font-family: "Mulish", sans-serif;
+    font-weight: $font-weight-bold;
+    margin: 0px 80px; /* Margen superior*/
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+}
+
+/* Estilos para completo-3 */
+.completo-3 {
   display: flex;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-/* El campo de búsqueda ocupa el espacio restante */
-.buscar-contenedor {
-  flex-grow: 1;
-}
-
-/* Contenedor de tarjetas */
-.tarjetas-contenedor {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas para las tarjetas */
-  gap: 15px;
-  width: 100%;
-  max-width: 1200px;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-/* Estilos individuales de la tarjeta */
-.tarjeta {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  height: auto;
-  min-height: 250px;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  background-color: #fff; /* Fondo blanco para resaltar la tarjeta */
-}
-
-/* Estilo para la imagen dentro de la tarjeta */
-.tarjeta img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px; /* Bordes redondeados */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil en la imagen */
-}
-
-/* Ajuste del contenido de la tarjeta */
-.tarjeta .contenido {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  padding: 10px;
-  overflow: hidden;
-  height: auto;
-}
-
-/* Estilos para enlaces o botones dentro de la tarjeta */
-.tarjeta .contenido a {
-  margin-top: auto;
-}
-
-/* Contenedor de imágenes de tarjetas */
-.card-images-container {
-  display: flex;
-  gap: 16px;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  padding: 0; /* Asegúrate de que no tenga padding */
+  margin: 0; /* Asegúrate de que no tenga margen */
+  height: auto; /* Ajusta la altura según el contenido */
+  max-height: 200px; /* Opcional: Define un máximo de altura si lo deseas */
 }
 
-/* Estilo específico para CardTittle */
-.card-tittle {
-  position: relative;
-  max-width: 250px; /* Ajusta el tamaño de la tarjeta */
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+/* Estilos para completo-4 */
+.completo-4 {
+  padding: 0 20px; /* 20px de padding en los lados izquierdo y derecho */
+  margin: 20px 0; /* Margen superior e inferior de 20px */
+  display: flex;
+  justify-content: center; /* Opcional: Centra el contenedor card-images-container */
+
+  .card-images-container {
+    display: flex; /* Alinea las tarjetas en fila */
+    flex-wrap: wrap; /* Permite que bajen a la siguiente línea si no hay suficiente espacio */
+    gap: 20px; /* Espacio de 20px entre cada tarjeta */
+    justify-content: flex-start; /* Alinea las tarjetas al inicio */
+    width: 100%;
+  }
+
+  /* Estilos de CardImage */
+  .card-image {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    flex-shrink: 0; /* Evita que las tarjetas se reduzcan en tamaño */
+  }
+
+  .card-image__imagen {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card-image__content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-image__nombre {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .card-image__duration {
+    font-size: 12px;
+    color: #666;
+  }
 }
 
-.card-tittle__imagen {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.card-tittle__nombre {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-weight: bold;
-  color: #000;
+.extra-space {
+  height: 20px;
 }

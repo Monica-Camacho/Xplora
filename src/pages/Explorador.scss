@@ -1,4 +1,4 @@
-/* Archivo explorador.scss */
+/* Archivo Explorador.scss */
 
 .page-container {
   display: flex;
@@ -6,7 +6,7 @@
   align-items: flex-start;
   justify-content: space-between; /* Distribuye el espacio entre los elementos */
   width: 100%;
-  padding: 20px; /* Añade un poco de padding si es necesario */
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -26,15 +26,16 @@
 }
 
 .image-container {
-  flex: 1; /* Permite que la imagen ocupe todo el espacio restante */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: flex-start; /* Alinea los elementos hacia la izquierda */
+  gap: 20px; /* Espacio entre el mapa y la imagen */
+  flex: 1;
   margin-left: 20px;
 }
 
 .image-container img {
   width: 100%; /* La imagen ocupará el ancho completo de su contenedor */
   height: auto;
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px;
 }

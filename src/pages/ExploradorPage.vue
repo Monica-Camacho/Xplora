@@ -39,16 +39,17 @@
       </div>
     </div>
 
-    <!-- Contenedor de la imagen al lado derecho -->
+    <!-- Contenedor de buscar-mapa y la imagen al lado derecho -->
     <div class="image-container">
-      <img src="assets/images/Mapa.jpg" alt="Destinos" />
+      <BuscarMapa />
+      <img src="assets/images/Mapa.jpg" alt="Mapa" />
     </div>
   </q-page>
 </template>
 
 <script setup>
-import bttnAmarillo from "src/components/bttnAmarillo/bttnAmarillo.vue";
 import FiltroMenu from "src/components/FiltroMenu/FiltroMenu.vue";
+import BuscarMapa from "src/components/BuscarMapa/BuscarMapa.vue";
 import "./Explorador.scss";
 
 defineOptions({

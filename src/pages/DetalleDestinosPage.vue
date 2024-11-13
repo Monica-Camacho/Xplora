@@ -8,11 +8,11 @@
     "
   >
     <!-- Contenedor de búsqueda centrado y con tamaño fijo -->
-    <div style="width: 80%; max-width: 1000px; margin-bottom: 20px">
+    <div class="buscar-contenedor">
       <BuscarDestino />
     </div>
 
-    <div style="display: flex; align-items: flex-start; gap: 20px; width: 100%">
+    <div class="contenido-principal">
       <!-- Único menú de filtro -->
       <FiltroMenu
         title="Filtrar por:"

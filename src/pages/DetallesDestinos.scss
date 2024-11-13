@@ -10,3 +10,20 @@
   margin-bottom: 10px; /* Ajusta el margen inferior según necesites */
   margin-left: 10px; /* Añade un poco de margen a la izquierda */
 }
+
+.buscar-contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.contenido-principal {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo */
+}
+
+.tarjetas-contenedor {
+  flex: 1;
+}

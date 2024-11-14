@@ -1,74 +1,74 @@
-@import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
+@import "src/css/app.scss"; // Importa estilos globales desde app.scss
 /* Archivo de estilos para el componente TarjetaDestino */
 
 /* Estilo de la tarjeta */
 .tarjeta-destino {
-  display: flex;
-  align-items: center;
+  display: flex; // Usa flexbox para organizar el contenido en fila
+  align-items: center; // Centra el contenido verticalmente
   background-color: #efedea; /* Fondo gris del CSS global */
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  gap: 10px;
+  border-radius: 12px; // Bordes redondeados para un diseño suave
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); // Sombra para dar profundidad
+  gap: 10px; // Espacio entre la imagen y el contenido
   max-width: 900px; /* Ancho de la tarjeta */
   height: 150px; /* Altura de la tarjeta */
-  overflow: hidden;
-  margin: 10px; /* Asegura que no haya margen adicional alrededor */
+  overflow: hidden; /* Evita el desbordamiento */
+  margin: 10px; /* Margen alrededor de la tarjeta */
 }
 
 /* Imagen de la tarjeta */
 .destino-imagen {
-  width: auto;
+  width: auto; // Ajusta el ancho de la imagen automáticamente
   height: 100%; /* La imagen ocupa toda la altura de la tarjeta */
   border-radius: 12px 0 0 12px; /* Borde redondeado en el lado izquierdo */
-  object-fit: cover;
+  object-fit: cover; // Asegura que la imagen cubra el área sin distorsión
 }
 
 /* Contenido de la tarjeta */
 .destino-contenido {
-  display: flex;
-  flex-direction: column;
+  display: flex; // Flexbox para organizar el contenido
+  flex-direction: column; // Disposición en columna dentro del contenido
   gap: 4px; /* Espacio entre elementos dentro del contenido */
-  margin: 0;
-  padding: 12px;
-  flex: 1; /* Toma el espacio restante */
+  margin: 0; // Sin margen
+  padding: 12px; // Espaciado interno alrededor del contenido
+  flex: 1; /* Toma el espacio restante en la tarjeta */
 }
 
 /* Estilo para el lugar (ubicación) */
 .destino-lugar {
-  font-size: 12px;
-  font-weight: $font-weight-semi-bold;
-  color: $color-text;
-  font-family: "Mulish", sans-serif;
-  margin: 0;
+  font-size: 12px; // Tamaño de fuente pequeño para el lugar
+  font-weight: $font-weight-semi-bold; // Peso de fuente semi-negrita
+  color: $color-text; // Color de texto según variable global
+  font-family: "Mulish", sans-serif; // Fuente Mulish
+  margin: 0; // Sin margen
 }
 
 /* Estilo para el título */
 .destino-titulo {
-  font-size: 14px;
-  font-weight: $font-weight-bold;
-  color: $color-text;
-  font-family: "Mulish", sans-serif;
-  margin: 0;
-  line-height: 1.2;
+  font-size: 14px; // Tamaño de fuente para el título
+  font-weight: $font-weight-bold; // Negrita para el título
+  color: $color-text; // Color de texto según variable global
+  font-family: "Mulish", sans-serif; // Fuente Mulish
+  margin: 0; // Sin margen
+  line-height: 1.2; // Espaciado de línea
 }
 
 /* Estilo para la descripción */
 .destino-descripcion {
-  font-size: 12px;
-  color: $color-text;
-  line-height: 1.3;
-  margin: 0;
+  font-size: 12px; // Tamaño de fuente pequeño para la descripción
+  color: $color-text; // Color de texto según variable global
+  line-height: 1.3; // Espaciado de línea para la legibilidad
+  margin: 0; // Sin margen
 }
 
 /* Contenedor del botón */
 .boton-contenedor {
-  margin-top: 6px;
+  margin-top: 6px; // Espacio superior
   align-self: flex-end; /* Alinea el botón a la derecha */
 }
 
 /* Estilo del botón pequeño */
 .boton-pequeno button {
   padding: 6px 12px; /* Tamaño compacto del botón */
-  font-size: 14px;
-  border-radius: 8px;
+  font-size: 14px; // Tamaño de fuente del botón
+  border-radius: 8px; // Bordes redondeados para el botón
 }

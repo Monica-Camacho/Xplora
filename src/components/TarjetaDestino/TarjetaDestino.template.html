@@ -1,14 +1,21 @@
 <!-- components/TarjetaDestino/TarjetaDestino.template.html -->
 <div class="tarjeta-destino">
+  <!-- Imagen del destino, utiliza la prop 'imagen' como fuente y 'titulo' como texto alternativo -->
   <img class="destino-imagen" :src="imagen" :alt="titulo" />
 
+  <!-- Contenedor de contenido textual del destino -->
   <div class="destino-contenido">
     <p class="destino-lugar">{{ lugar }}</p>
+    <!-- Muestra el lugar del destino -->
     <h3 class="destino-titulo">{{ titulo }}</h3>
+    <!-- Muestra el título del destino -->
     <p class="destino-descripcion">{{ descripcion }}</p>
+    <!-- Muestra la descripción del destino -->
 
+    <!-- Contenedor del botón de acción -->
     <div class="boton-contenedor">
       <bttnAmarillo class="boton-pequeno" label="Leer más" />
+      <!-- Botón para la acción de "Leer más" -->
     </div>
   </div>
 </div>

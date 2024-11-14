@@ -1,64 +1,69 @@
-@import "src/css/app.scss";
+@import "src/css/app.scss"; // Importa los estilos globales desde app.scss para usar variables y configuraciones globales
 
+// Estilos para el contenedor principal del menú de filtro
 .filtro-menu {
-  background-color: $color-gray;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
+  background-color: $color-gray; // Fondo gris para el menú de filtro
+  padding: 20px; // Espaciado interno
+  border-radius: 10px; // Bordes redondeados
+  width: 250px; // Ancho fijo para el contenedor
 }
 
+// Estilos para el título del menú de filtro
 .titulo {
-  font-size: $font-size-title;
-  font-weight: $font-weight-bold;
-  font-family: "Mulish", sans-serif;
-  margin-bottom: 5px;
-  color: $color-text;
+  font-size: $font-size-title; // Tamaño de fuente definido para títulos
+  font-weight: $font-weight-bold; // Peso de fuente en negrita
+  font-family: "Mulish", sans-serif; // Fuente Mulish
+  margin-bottom: 5px; // Espacio inferior
+  color: $color-text; // Color del texto
 }
 
+// Estilos para subtítulos de secciones dentro del menú de filtro
 .subtitulo {
-  font-size: $font-size-subtitle;
-  font-weight: $font-weight-semi-bold;
-  font-family: "Mulish", sans-serif;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: $color-text;
+  font-size: $font-size-subtitle; // Tamaño de fuente para subtítulos
+  font-weight: $font-weight-semi-bold; // Peso semi-bold
+  font-family: "Mulish", sans-serif; // Fuente Mulish
+  margin-top: 5px; // Espacio superior
+  margin-bottom: 5px; // Espacio inferior
+  color: $color-text; // Color del texto
 }
 
+// Estilos para cada opción dentro del menú de filtro
 .opcion {
-  font-size: $font-size-normal;
-  font-weight: $font-weight-normal;
-  font-family: "Quicksand", sans-serif;
-  margin-bottom: 10px;
-  color: $color-text;
-  display: flex;
-  align-items: center; /* Alinea verticalmente el checkbox y el texto */
+  font-size: $font-size-normal; // Tamaño de fuente normal
+  font-weight: $font-weight-normal; // Peso de fuente normal
+  font-family: "Quicksand", sans-serif; // Fuente Quicksand
+  margin-bottom: 10px; // Espacio inferior entre opciones
+  color: $color-text; // Color del texto
+  display: flex; // Flexbox para alinear elementos en fila
+  align-items: center; // Alinea verticalmente el checkbox y el texto
 }
 
-/* Estilo personalizado para el checkbox de Bootstrap */
+// Estilos personalizados para el checkbox
 .custom-checkbox {
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #000; /* Borde negro más delgado */
-  border-radius: 4px; /* Bordes redondeados */
-  cursor: pointer;
-  position: relative;
-  margin-right: 8px;
-  background-color: transparent; /* Fondo transparente por defecto */
+  appearance: none; // Quita el estilo predeterminado del navegador
+  width: 18px; // Ancho del checkbox
+  height: 18px; // Altura del checkbox
+  border: 1px solid #000; // Borde negro
+  border-radius: 4px; // Bordes redondeados
+  cursor: pointer; // Cambia el cursor a puntero al pasar el ratón
+  position: relative; // Para posicionar la palomita centrada
+  margin-right: 8px; // Espacio a la derecha del checkbox
+  background-color: transparent; // Fondo transparente por defecto
 }
 
-/* Estilo al estar seleccionado */
+// Estilos para el checkbox cuando está seleccionado
 .custom-checkbox:checked {
-  background-color: #007bff; /* Fondo azul cuando está seleccionado */
-  border-color: #007bff; /* Borde azul cuando está seleccionado */
+  background-color: #007bff; // Fondo azul cuando está seleccionado
+  border-color: #007bff; // Borde azul cuando está seleccionado
 }
 
+// Estilos para la palomita dentro del checkbox cuando está seleccionado
 .custom-checkbox:checked::before {
-  content: "\2714"; /* Símbolo de la palomita */
+  content: "\2714"; // Símbolo de la palomita
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; /* Palomita blanca */
-  font-size: 12px;
+  top: 50%; // Posiciona en el centro verticalmente
+  left: 50%; // Posiciona en el centro horizontalmente
+  transform: translate(-50%, -50%); // Centra completamente
+  color: white; // Color blanco para la palomita
+  font-size: 12px; // Tamaño de la palomita
 }

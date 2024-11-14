@@ -1,13 +1,13 @@
-@import "src/css/app.scss"; /* Asegúrate de que la ruta sea correcta */
+@import "src/css/app.scss"; /* Importa estilos globales desde app.scss */
 
 /* Estilos para completo-1 */
 .completo-1 {
-  display: flex;
+  display: flex; // Flexbox para organizar contenido en fila
   justify-content: center; /* Centra horizontalmente */
-  margin: 20px 250px; /* 20px arriba y abajo, 200px a los lados */
+  margin: 20px 250px; /* 20px arriba y abajo, 250px a los lados */
 
   .buscar-contenedor {
-    flex-grow: 1;
+    flex-grow: 1; // Permite que el contenedor crezca para ocupar el espacio disponible
     /* Otros estilos que necesites para buscar-contenedor */
   }
 }
@@ -15,10 +15,10 @@
 /* Estilos para titulo-1 */
 .titulo-1 {
   .titulo-seccion {
-    color: $color4;
-    font-size: $font-size-title;
-    font-family: "Mulish", sans-serif;
-    font-weight: $font-weight-bold;
+    color: $color4; // Color según la variable global
+    font-size: $font-size-title; // Tamaño de fuente de título
+    font-family: "Mulish", sans-serif; // Fuente Mulish
+    font-weight: $font-weight-bold; // Peso de fuente negrita
     margin: 0px 80px; /* Margen superior*/
     text-align: left; /* Alinea el texto a la izquierda */
   }
@@ -26,118 +26,123 @@
 
 /* Estilos para completo-2 */
 .completo-2 {
-  display: flex;
+  display: flex; // Flexbox para organizar tarjetas en fila
   gap: 20px; /* Espacio de 20px entre cada tarjeta */
   flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea si no hay espacio */
   padding: 0 20px; /* 20px de padding en los lados izquierdo y derecho */
 
   /* Estilos de CardTittle */
   .card-tittle {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+    position: relative; // Posiciona el título relativo al contenedor
+    width: 200px; // Ancho fijo de la tarjeta
+    height: 200px; // Altura fija de la tarjeta
+    border-radius: 15px; // Bordes redondeados
+    overflow: hidden; // Oculta el contenido que sobresale
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra para profundidad
+    background-color: #fff; // Fondo blanco
   }
 
   .card-tittle__imagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; // La imagen ocupa todo el ancho de la tarjeta
+    height: 100%; // La imagen ocupa toda la altura de la tarjeta
+    object-fit: cover; // Ajusta la imagen sin distorsión
   }
 
   .card-tittle__nombre {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 8px;
-    border-radius: 10px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #000;
-    max-width: calc(100% - 20px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    position: absolute; // Posiciona el nombre sobre la imagen
+    top: 10px; // Margen superior de 10px
+    left: 10px; // Margen izquierdo de 10px
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.8
+    ); // Fondo blanco semi-transparente
+    padding: 5px 8px; // Espaciado interno
+    border-radius: 10px; // Bordes redondeados
+    font-size: 12px; // Tamaño de fuente pequeño
+    font-weight: bold; // Fuente en negrita
+    color: #000; // Color negro del texto
+    max-width: calc(100% - 20px); // Ancho máximo para el texto
+    overflow: hidden; // Oculta el texto que excede el contenedor
+    text-overflow: ellipsis; // Añade puntos suspensivos si el texto es demasiado largo
+    white-space: nowrap; // Evita que el texto se divida en varias líneas
   }
 }
 
 /* Estilos para titulo-2 */
 .titulo-2 {
   .titulo-seccion {
-    color: $color4;
-    font-size: $font-size-title;
-    font-family: "Mulish", sans-serif;
-    font-weight: $font-weight-bold;
-    margin: 0px 80px; /* Margen superior*/
+    color: $color4; // Color según variable global
+    font-size: $font-size-title; // Tamaño de fuente de título
+    font-family: "Mulish", sans-serif; // Fuente Mulish
+    font-weight: $font-weight-bold; // Fuente en negrita
+    margin: 0px 80px; /* Margen superior */
     text-align: left; /* Alinea el texto a la izquierda */
   }
 }
 
 /* Estilos para completo-3 */
 .completo-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 0 30px 0; /* 10px arriba, 0 a los lados, 30px abajo */
-  margin: 0; /* Asegúrate de que no tenga margen */
+  display: flex; // Flexbox para organizar contenido centrado
+  justify-content: center; // Centra horizontalmente
+  align-items: center; // Centra verticalmente
+  padding: 0px 0 30px 0; /* 0px arriba, 0 a los lados, 30px abajo */
+  margin: 0; /* Sin margen extra */
   height: auto; /* Ajusta la altura según el contenido */
-  max-height: 200px; /* Opcional: Define un máximo de altura si lo deseas */
+  max-height: 200px; /* Define una altura máxima opcional */
 }
 
 /* Estilos para completo-4 */
 .completo-4 {
   padding: 0 20px; /* 20px de padding en los lados izquierdo y derecho */
   margin: 20px 0; /* Margen superior e inferior de 20px */
-  display: flex;
-  justify-content: center; /* Opcional: Centra el contenedor card-images-container */
+  display: flex; // Flexbox para organizar contenido centrado
+  justify-content: center; /* Centra el contenedor card-images-container */
 
   .card-images-container {
-    display: flex; /* Alinea las tarjetas en fila */
+    display: flex; /* Flexbox para alinear las tarjetas en fila */
     flex-wrap: wrap; /* Permite que bajen a la siguiente línea si no hay suficiente espacio */
     gap: 20px; /* Espacio de 20px entre cada tarjeta */
     justify-content: flex-start; /* Alinea las tarjetas al inicio */
-    width: 100%;
+    width: 100%; // Contenedor ocupa el ancho completo
   }
 
   /* Estilos de CardImage */
   .card-image {
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    width: 200px; // Ancho fijo de la tarjeta
+    height: 250px; // Altura fija de la tarjeta
+    border-radius: 10px; // Bordes redondeados
+    overflow: hidden; // Oculta el contenido que excede el contenedor
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para profundidad
+    background-color: #fff; // Fondo blanco
     flex-shrink: 0; /* Evita que las tarjetas se reduzcan en tamaño */
   }
 
   .card-image__imagen {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+    width: 100%; // La imagen ocupa todo el ancho de la tarjeta
+    height: 150px; // Altura de la imagen dentro de la tarjeta
+    object-fit: cover; // Ajusta la imagen sin distorsión
   }
 
   .card-image__content {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 10px; // Espaciado interno del contenido
+    display: flex; // Flexbox para organizar el contenido
+    flex-direction: column; // Disposición en columna dentro del contenido
+    justify-content: space-between; // Espaciado entre elementos
   }
 
   .card-image__nombre {
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: bold; // Fuente en negrita para el nombre
+    font-size: 14px; // Tamaño de fuente
   }
 
   .card-image__duration {
-    font-size: 12px;
-    color: #666;
+    font-size: 12px; // Tamaño de fuente pequeño
+    color: #666; // Color gris para el texto de duración
   }
 }
 
 .extra-space {
-  height: 20px;
+  height: 20px; // Espacio adicional
 }

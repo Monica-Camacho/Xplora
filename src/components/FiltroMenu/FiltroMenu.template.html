@@ -1,22 +1,30 @@
 <div class="filtro-menu">
+  <!-- Título principal del menú de filtro -->
   <h3 class="titulo">{{ title }}</h3>
 
+  <!-- Itera sobre cada sección de filtros en 'sections' -->
   <div v-for="(section, index) in sections" :key="index" class="categoria">
+    <!-- Subtítulo de cada sección de filtro -->
     <h4 class="subtitulo">{{ section.title }}</h4>
+
+    <!-- Itera sobre cada opción dentro de la sección actual -->
     <div
       v-for="(option, i) in section.options"
       :key="i"
       class="opcion form-check"
     >
+      <!-- Checkbox personalizado para seleccionar cada opción de filtro -->
       <input
         class="form-check-input custom-checkbox"
         type="checkbox"
         :id="`checkbox-${index}-${i}`"
         v-model="selectedFilters[option]"
       />
-      <label class="form-check-label" :for="`checkbox-${index}-${i}`"
-        >{{ option }}</label
-      >
+      <!-- Etiqueta del checkbox, enlazada al ID único -->
+      <label class="form-check-label" :for="`checkbox-${index}-${i}`">
+        {{ option }}
+        <!-- Muestra el texto de la opción -->
+      </label>
     </div>
   </div>
 </div>

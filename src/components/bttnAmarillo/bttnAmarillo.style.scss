@@ -1,21 +1,23 @@
-@import "src/css/app.scss"; // Asegúrate de que la ruta sea correcta
+@import "src/css/app.scss"; // Importa los estilos globales desde app.scss para usar variables y configuraciones globales.
 
+// Estilos para el botón amarillo
 .bttn-amarillo {
-  background-color: $color2;
-  color: $color-text;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  font-size: 14px; /* Tamaño de texto especificado en 14px */
-  font-family: "Mulish", sans-serif;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: $color2; // Asigna el color de fondo usando la variable de color definida en app.scss
+  color: $color-text; // Color del texto, en este caso es negro según la variable
+  padding: 10px 20px; // Añade espacio interno de 10px arriba/abajo y 20px a los lados
+  border-radius: 10px; // Bordes redondeados de 10px
+  border: none; // Elimina cualquier borde predeterminado
+  font-size: 14px; // Tamaño de la fuente para el texto del botón
+  font-family: "Mulish", sans-serif; // Establece la fuente Mulish para el botón
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra suave debajo del botón para dar efecto de elevación
+  cursor: pointer; // Cambia el cursor a puntero cuando el usuario pasa el ratón sobre el botón
+  transition: background-color 0.3s ease; // Transición suave en el cambio de color al hacer hover
 
+  // Efecto hover: cambia el color de fondo al pasar el ratón
   &:hover {
     background-color: rgba(
       $color2,
       0.9
-    ); // Reduce un poco la opacidad para "oscurecer"
+    ); // Aplica una ligera reducción de opacidad al color de fondo
   }
 }

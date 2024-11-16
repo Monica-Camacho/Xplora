@@ -11,19 +11,19 @@
       <!-- GitHub -->
       <q-carousel-slide
         :name="1"
-        img-src="assets/images/tarjetadestinos/destinos.jpg"
+        img-src="src/assets/images/tarjetadestinos/destinos.jpg"
       />
       <q-carousel-slide
         :name="2"
-        img-src="assets/images/tarjetadestinos/destinos.jpg"
+        img-src="src/assets/images/tarjetadestinos/destinos.jpg"
       />
       <q-carousel-slide
         :name="3"
-        img-src="assets/images/tarjetadestinos/destinos.jpg"
+        img-src="src/assets/images/tarjetadestinos/destinos.jpg"
       />
       <q-carousel-slide
         :name="4"
-        img-src="assets/images/tarjetadestinos/destinos.jpg"
+        img-src="src/assets/images/tarjetadestinos/destinos.jpg"
       />
     </q-carousel>
   </div>

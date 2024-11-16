@@ -27,37 +27,37 @@
       <div class="card-images-container">
         <!-- Tarjetas de actividades con imagen, nombre y número de visitas -->
         <CardImage
-          imageUrl="assets/images/Destinos/newyork.jpg"
+          imageUrl="src/assets/images/Destinos/newyork.jpg"
           activityName="New York"
           duration="200 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/vegas.jpg"
+          imageUrl="src/assets/images/Destinos/vegas.jpg"
           activityName="Las Vegas"
           duration="350 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/cayo.jpg"
+          imageUrl="src/assets/images/Destinos/cayo.jpg"
           activityName="Cayo Hueso"
           duration="150 visitas"
           :showIcon="false"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/sandiego.jpg"
+          imageUrl="src/assets/images/Destinos/sandiego.jpg"
           activityName="San Diego"
           duration="400 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/miami.jpg"
+          imageUrl="src/assets/images/Destinos/miami.jpg"
           activityName="Miami"
           duration="320 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/orlando.jpg"
+          imageUrl="src/assets/images/Destinos/orlando.jpg"
           activityName="Orlando"
           duration="280 visitas"
           :showIcon="true"
@@ -78,37 +78,37 @@
           lugar="Londres"
           titulo="Entrada al London Eye"
           descripcion="Con esta entrada, podrás subir al emblemático London Eye para dar un paseo de 30 minutos sobre la ciudad."
-          imagen="assets/images/Turismo/londoneye.jpg"
+          imagen="src/assets/images/Turismo/londoneye.jpg"
         />
         <TarjetaDestino
           lugar="Ciudad de México"
           titulo="Tour por las pirámides de Teotihuacán "
           descripcion="Visitarás el santuario nacional de México y las ruinas de una antigua ciudad mesoamericana."
-          imagen="assets/images/Turismo/piramide.jpg"
+          imagen="src/assets/images/Turismo/piramide.jpg"
         />
         <TarjetaDestino
           lugar="París"
           titulo="Crucero por el Sena con almuerzo"
           descripcion="Embarcarás junto a la Torre Eiffel, y desde el moderno barco con techo de cristal podrás contemplar las vistas y los monumentos a través de la cubierta panorámica."
-          imagen="assets/images/Turismo/sena.jpg"
+          imagen="src/assets/images/Turismo/sena.jpg"
         />
         <TarjetaDestino
           lugar="Barcelona"
           titulo="Entrada a la Sagrada Familia con audioguía"
           descripcion="Este recorrido por la Sagrada Familia ofrecerá acceso y una audioguía que brinda información sobre la obra maestra de Gaudí."
-          imagen="assets/images/Turismo/sagradafamilia.jpg"
+          imagen="src/assets/images/Turismo/sagradafamilia.jpg"
         />
         <TarjetaDestino
           lugar="Ámsterdam"
           titulo="Entrada al Rijksmuseum"
           descripcion="Durante la visita, podrás ver obras maestras de destacados artistas holandeses como Rembrandt, Frans Hals y Johannes Vermeer."
-          imagen="assets/images/Turismo/Rijksmuseum.jpg"
+          imagen="src/assets/images/Turismo/Rijksmuseum.jpg"
         />
         <TarjetaDestino
           lugar="Tokyo"
           titulo="Entrada al Tokyo Skytree"
           descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
-          imagen="assets/images/Turismo/Tokyo.jpg"
+          imagen="src/assets/images/Turismo/Tokyo.jpg"
         />
       </div>
     </div>

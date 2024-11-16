@@ -22,21 +22,27 @@
       <!-- Cada tarjeta representa un destino cercano -->
       <CardTittle
         nombre="Ciudad de México"
-        imagen="assets/images/Destinos/mexico.jpg"
+        imagen="src/assets/images/Destinos/mexico.jpg"
       />
       <CardTittle
         nombre="Guadalajara"
-        imagen="assets/images/Destinos/guadalajara.jpg"
+        imagen="src/assets/images/Destinos/guadalajara.jpg"
       />
-      <CardTittle nombre="Mérida" imagen="assets/images/Destinos/merida.jpg" />
-      <CardTittle nombre="Tulum" imagen="assets/images/Destinos/tulum.jpg" />
+      <CardTittle
+        nombre="Mérida"
+        imagen="src/assets/images/Destinos/merida.jpg"
+      />
+      <CardTittle
+        nombre="Tulum"
+        imagen="src/assets/images/Destinos/tulum.jpg"
+      />
       <CardTittle
         nombre="San José del Cabo"
-        imagen="assets/images/Destinos/cabo.jpg"
+        imagen="src/assets/images/Destinos/cabo.jpg"
       />
       <CardTittle
         nombre="Santa Cruz - Huatulco"
-        imagen="assets/images/Destinos/santa.jpg"
+        imagen="src/assets/images/Destinos/santa.jpg"
       />
     </div>
 
@@ -64,37 +70,37 @@
       <div class="card-images-container">
         <!-- Tarjetas de actividades con imagen, nombre y número de visitas -->
         <CardImage
-          imageUrl="assets/images/Destinos/newyork.jpg"
+          imageUrl="src/assets/images/Destinos/newyork.jpg"
           activityName="New York"
           duration="200 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/vegas.jpg"
+          imageUrl="src/assets/images/Destinos/vegas.jpg"
           activityName="Las Vegas"
           duration="350 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/cayo.jpg"
+          imageUrl="src/assets/images/Destinos/cayo.jpg"
           activityName="Cayo Hueso"
           duration="150 visitas"
           :showIcon="false"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/sandiego.jpg"
+          imageUrl="src/assets/images/Destinos/sandiego.jpg"
           activityName="San Diego"
           duration="400 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/miami.jpg"
+          imageUrl="src/assets/images/Destinos/miami.jpg"
           activityName="Miami"
           duration="320 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/Destinos/orlando.jpg"
+          imageUrl="src/assets/images/Destinos/orlando.jpg"
           activityName="Orlando"
           duration="280 visitas"
           :showIcon="true"

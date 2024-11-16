@@ -12,7 +12,7 @@
 
     <!-- Imagen adicional -->
     <q-img
-      src="assets/images/Destinos/mexico.jpg"
+      src="src/assets/images/Destinos/mexico.jpg"
       style="width: 200px; height: 200px; margin-top: 20px"
     />
 

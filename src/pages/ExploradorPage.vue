@@ -42,7 +42,7 @@
     <!-- Contenedor de buscar-mapa y la imagen al lado derecho -->
     <div class="image-container">
       <BuscarMapa />
-      <img src="assets/images/Mapa.jpg" alt="Mapa" />
+      <img src="src/assets/images/Mapa.jpg" alt="Mapa" />
     </div>
   </q-page>
 </template>

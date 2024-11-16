@@ -64,37 +64,37 @@
       <div class="card-images-container">
         <!-- Tarjetas de actividades con imagen, nombre y número de visitas -->
         <CardImage
-          imageUrl="assets/images/destinos/newyork.jpg"
+          imageUrl="assets/images/Destinos/newyork.jpg"
           activityName="New York"
           duration="200 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/destinos/vegas.jpg"
+          imageUrl="assets/images/Destinos/vegas.jpg"
           activityName="Las Vegas"
           duration="350 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/destinos/cayo.jpg"
+          imageUrl="assets/images/Destinos/cayo.jpg"
           activityName="Cayo Hueso"
           duration="150 visitas"
           :showIcon="false"
         />
         <CardImage
-          imageUrl="assets/images/destinos/sandiego.jpg"
+          imageUrl="assets/images/Destinos/sandiego.jpg"
           activityName="San Diego"
           duration="400 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/destinos/miami.jpg"
+          imageUrl="assets/images/Destinos/miami.jpg"
           activityName="Miami"
           duration="320 visitas"
           :showIcon="true"
         />
         <CardImage
-          imageUrl="assets/images/destinos/orlando.jpg"
+          imageUrl="assets/images/Destinos/orlando.jpg"
           activityName="Orlando"
           duration="280 visitas"
           :showIcon="true"

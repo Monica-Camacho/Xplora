@@ -1,6 +1,6 @@
 para iniciar el proyecto: quasar dev
 *************************************************
-PARA CREAR NUEVAS PAGINAS: 
+PARA CREAR NUEVAS PAGINAS:
 
 En carpeta pages creo mi archivo NombrePage.vue
 
@@ -36,7 +36,7 @@ Poner este codigo en app.scss
 body {
     font-family: 'Quicksand', sans-serif;
   }
-  
+
   /* Aplica Mulish a los títulos */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Mulish', sans-serif;
@@ -52,6 +52,11 @@ Copia los archivos de dist/spa a la raíz de gh-pages.
 Sube los cambios (git add ., git commit -m "mensaje", git push).
 Verifica el sitio en GitHub Pages.
 
+********
+Fix Bootstrap Icons integrity issue es el commit donde se visualiza bien el trabajo.
 
-
+******
+El index de Ejecutar Quasar Build es aquel que me permite ejecutar ese comando
+El index.html que deje en esta ocasión, es el copie de dist/spa despues de lo anterior.
+****
 

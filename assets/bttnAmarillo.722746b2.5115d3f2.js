@@ -1,0 +1,1 @@
+import{F as r,T as t,h as o}from"./index.8b3fe72c.js";import{a as l}from"./plugin-vue_export-helper.21dcd24c.af4bb838.js";var n={name:"bttnAmarillo",props:{label:{type:String,default:"Buscar"}}};const e={class:"bttn-amarillo"};function s(a,i,m,p,c,u){return r(),t("button",e,o(a.label),1)}var d=l(n,[["render",s],["__scopeId","data-v-20400364"]]);export{d as u};

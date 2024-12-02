@@ -49,34 +49,34 @@
 
         <!-- Tarjetas de destino -->
         <TarjetaDestino
-          lugar="Ciudad de México"
-          titulo="Majestuosidad de Teotihuacán"
-          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
-          imagen="src/assets/images/tarjetadestinos/destinos.jpg"
+          lugar="París"
+          titulo="La Ciudad del Amor"
+          descripcion="Descubre los encantos de París, hogar de la icónica Torre Eiffel, el romántico Sena y el arte sin igual del Louvre. Una ciudad donde cada esquina cuenta una historia."
+          imagen="src/assets/images/tarjetadestinos/paris.jpg"
+        />
+        <TarjetaDestino
+          lugar="Londres"
+          titulo="Historia y Modernidad"
+          descripcion="Explora la vibrante Londres, con su emblemático Big Ben, el majestuoso Palacio de Buckingham y el moderno London Eye. Una ciudad donde lo clásico y lo contemporáneo se mezclan."
+          imagen="src/assets/images/tarjetadestinos/londres.jpg"
+        />
+        <TarjetaDestino
+          lugar="Roma"
+          titulo="La Ciudad Eterna"
+          descripcion="Vive la historia en Roma, cuna del Imperio Romano, con maravillas como el Coliseo, la Fontana di Trevi y la Ciudad del Vaticano. Una mezcla única de cultura, gastronomía y arte."
+          imagen="src/assets/images/tarjetadestinos/roma.jpg"
         />
         <TarjetaDestino
           lugar="Ciudad de México"
-          titulo="Majestuosidad de Teotihuacán"
-          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
-          imagen="src/assets/images/tarjetadestinos/destinos.jpg"
+          titulo="Corazón de Mesoamérica"
+          descripcion="Sumérgete en la Ciudad de México, una urbe vibrante con una rica herencia cultural. Desde las pirámides de Teotihuacán hasta el icónico Zócalo, la historia y modernidad se encuentran aquí."
+          imagen="src/assets/images/tarjetadestinos/cdmx.jpg"
         />
         <TarjetaDestino
-          lugar="Ciudad de México"
-          titulo="Majestuosidad de Teotihuacán"
-          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
-          imagen="assets/images/tarjetadestinos/destinos.jpg"
-        />
-        <TarjetaDestino
-          lugar="Ciudad de México"
-          titulo="Majestuosidad de Teotihuacán"
-          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
-          imagen="src/assets/images/tarjetadestinos/destinos.jpg"
-        />
-        <TarjetaDestino
-          lugar="Ciudad de México"
-          titulo="Majestuosidad de Teotihuacán"
-          descripcion="Uno de los sitios arqueológicos más importantes de México, conocido por sus imponentes Pirámides del Sol y la Luna. Este antiguo centro ceremonial y ciudad es un ejemplo de la grandeza de las civilizaciones mesoamericanas."
-          imagen="src/assets/images/tarjetadestinos/destinos.jpg"
+          lugar="Dubái"
+          titulo="El Lujo del Futuro"
+          descripcion="Déjate sorprender por Dubái, con sus rascacielos futuristas, mercados tradicionales y lujosos hoteles. Vive la mezcla única de modernidad y tradición árabe."
+          imagen="src/assets/images/tarjetadestinos/dubai.jpg"
         />
       </div>
     </div>

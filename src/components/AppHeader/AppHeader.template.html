@@ -1,21 +1,31 @@
 <header class="header-container">
   <!-- Sección Izquierda: Logo -->
   <div class="header-logo">
-    <img src="src/assets/images/logo.svg" alt="Logo" class="logo-img" />
-    <!-- Ruta directa a la imagen -->
-    <span class="logo-text">Xplora</span>
+    <img
+      src="src/assets/images/logo.svg"
+      alt="Logo"
+      class="logo-img"
+      @click="navigateTo('/index')"
+    />
+    <span class="logo-text" @click="navigateTo('/index')">Xplora</span>
   </div>
 
   <!-- Sección Central: Idioma y Contacto -->
   <div class="header-center">
     <div class="language"><i class="bi bi-translate"></i> Español</div>
-    <div class="contact">Contacto</div>
+    <div class="contact" @click="navigateTo('/contacto')">Contacto</div>
   </div>
 
   <!-- Sección Derecha: Redes Sociales y Cerrar Sesión -->
   <div class="header-right">
-    <i class="bi bi-facebook"></i>
-    <i class="bi bi-instagram"></i>
-    <i class="bi bi-twitter-x"></i>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-twitter-x"></i>
+    </a>
   </div>
 </header>

@@ -5,7 +5,7 @@
       <i class="bi bi-brush icon"></i>
 
       <div class="main-text">Página en Mantenimiento</div>
-      <div class="sub-text">Vuelva Pronto</div>
+      <div class="sub-text">Hospedaje</div>
 
       <q-btn
         class="q-mt-xl"

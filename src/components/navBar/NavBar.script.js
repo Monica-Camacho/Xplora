@@ -12,11 +12,11 @@ export default {
       {
         title: "Hospedaje",
         icon: "bi bi-house-door",
-        link: "/detalledestinos",
+        link: "/hospedaj",
       },
-      { title: "Transporte", icon: "bi bi-airplane", link: "/explorador" },
+      { title: "Transporte", icon: "bi bi-airplane", link: "/transporte" },
       { title: "Turismo", icon: "bi bi-map", link: "/turismo" },
-      { title: "Experiencias", icon: "bi bi-journals", link: "/whatsapp" },
+      { title: "Experiencias", icon: "bi bi-journals", link: "/experiencias" },
       {
         title: "Inicio de sesión",
         icon: "bi bi-person",

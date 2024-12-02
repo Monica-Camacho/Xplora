@@ -2,7 +2,7 @@
   <q-page>
     <!-- Contenedor completo-1 para el buscador de destinos -->
     <div class="completo-1">
-      <div class="buscar-contenedor">
+      <div class="buscar-contenedor" @click="irAPagina">
         <BuscarDestino />
         <!-- Componente de búsqueda de destinos -->
       </div>
@@ -116,4 +116,15 @@ import "./Destinos.scss"; /* Importa el archivo de estilos específico para la p
 import CardImage from "src/components/CardImage/CardImage.vue"; // Componente para mostrar cada actividad con imagen
 import barraNavegacion from "src/components/barraNavegacion/barraNavegacion.vue"; // Barra de navegación para filtrado de actividades
 import CardTittle from "src/components/CardTittle/CardTittle.vue"; // Componente de tarjeta para mostrar el título e imagen del destino
+</script>
+
+<script>
+export default {
+  methods: {
+    irAPagina() {
+      // Redirige a la página deseada usando Vue Router
+      this.$router.push("/detalledestinos"); // Cambia '/destinos' a la ruta que desees
+    },
+  },
+};
 </script>

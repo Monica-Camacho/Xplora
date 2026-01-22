@@ -1,65 +1,65 @@
 const routes = [
   {
     path: "/",
-    component: () => import("layouts/CombinedLayout.vue"), // Layout principal
+    component: () => import("layouts/CombinedLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/IndexPage.vue") }, // Página de inicio -K
-      { path: "index", component: () => import("pages/IndexPage.vue") }, // Página de inicio -K
+      { path: "", component: () => import("pages/IndexPage.vue") },
+      { path: "index", component: () => import("pages/IndexPage.vue") },
       {
         path: "transporte",
         component: () => import("pages/TransportePage.vue"),
-      }, // -K
+      },
       {
         path: "TransporteBusqueda",
         component: () => import("pages/TransporteBusquedaPage.vue"),
-      }, // -K
+      },
       {
         path: "TransporteDetalle",
         component: () => import("pages/TransporteDetallePage.vue"),
-      }, // -K
+      },
       {
         path: "privacidad",
         component: () => import("pages/PrivacidadPage.vue"),
-      }, // -K
-      { path: "perfil", component: () => import("pages/PerfilPage.vue") }, // -K
-      { path: "contacto", component: () => import("pages/ContactoPage.vue") }, // -K
-      { path: "ofertas", component: () => import("pages/OfertasPage.vue") }, // -K
+      },
+      { path: "perfil", component: () => import("pages/PerfilPage.vue") },
+      { path: "contacto", component: () => import("pages/ContactoPage.vue") },
+      { path: "ofertas", component: () => import("pages/OfertasPage.vue") },
+      { path: "pruebas", component: () => import("pages/PruebasPage.vue") },
+      { path: "whatsapp", component: () => import("pages/WhatsappPage.vue") },
+      { path: "nombre", component: () => import("pages/NombrePage.vue") },
 
-      { path: "pruebas", component: () => import("pages/PruebasPage.vue") }, // Página "Pruebas"
-      { path: "whatsapp", component: () => import("pages/WhatsappPage.vue") }, // Página "Whatsapp"
-      { path: "nombre", component: () => import("pages/NombrePage.vue") }, // Página "Nombre"
+      // ✅ Corregido: removido 'src/' para consistencia
       {
         path: "mantenimiento",
-        component: () => import("src/pages/MantenimientoPage.vue"),
+        component: () => import("pages/MantenimientoPage.vue"),
       },
+      { path: "destinos", component: () => import("pages/DestinosPage.vue") },
+
+      // ✅ Corregido: quitada la '/' del inicio
       {
-        path: "destinos",
-        component: () => import("src/pages/DestinosPage.vue"),
+        path: "detalledestinos",
+        component: () => import("pages/DetalleDestinosPage.vue"),
       },
-      {
-        path: "/detalledestinos",
-        component: () => import("src/pages/DetalleDestinosPage.vue"),
-      },
-      {
-        path: "turismo",
-        component: () => import("src/pages/TurismoPage.vue"),
-      },
+
+      { path: "turismo", component: () => import("pages/TurismoPage.vue") },
       {
         path: "explorador",
         component: () => import("pages/ExploradorPage.vue"),
-      }, // Página de Mapa Interactivo
+      },
       {
         path: "experiencias",
         component: () => import("pages/ExperienciasPage.vue"),
-      }, // -Z
-      { path: "hospedaj", component: () => import("pages/HospedajPage.vue") }, // -Z
+      },
+
+      // ⚠️ OJO: Verifica si es 'hospedaj' o 'hospedaje'
+      { path: "hospedaj", component: () => import("pages/HospedajPage.vue") },
     ],
   },
 
-  // Ruta de error para capturar rutas no existentes
+  // Ruta 404 (Mantenimiento)
   {
     path: "/:catchAll(.*)*",
-    component: () => import("src/pages/MantenimientoPage.vue"),
+    component: () => import("pages/MantenimientoPage.vue"),
   },
 ];
 

@@ -22,7 +22,7 @@
 
 <script setup>
 defineOptions({
-  name: "ErrorNotFound",
+  name: "IndexPage", // <--- Cambiado para que coincida con el archivo
 });
 </script>
 

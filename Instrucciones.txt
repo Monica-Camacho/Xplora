@@ -60,3 +60,9 @@ El index de Ejecutar Quasar Build es aquel que me permite ejecutar ese comando
 El index.html que deje en esta ocasión, es el copie de dist/spa despues de lo anterior.
 ****
 
+Instrucciones para abrir local
+quasar dev
+
+http://localhost:9000/Xplora/#/destinos
+
+

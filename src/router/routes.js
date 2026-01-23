@@ -1,65 +1,65 @@
 const routes = [
   {
     path: "/",
-    component: () => import("layouts/CombinedLayout.vue"),
+    component: () => import("layouts/CombinedLayout.vue"), // Layout principal
     children: [
-      { path: "", component: () => import("pages/IndexPage.vue") },
-      { path: "index", component: () => import("pages/IndexPage.vue") },
+      { path: "", component: () => import("pages/IndexPage.vue") }, // Página de inicio -K
+      { path: "index", component: () => import("pages/IndexPage.vue") }, // Página de inicio -K
       {
         path: "transporte",
         component: () => import("pages/TransportePage.vue"),
-      },
+      }, // -K
       {
         path: "TransporteBusqueda",
         component: () => import("pages/TransporteBusquedaPage.vue"),
-      },
+      }, // -K
       {
         path: "TransporteDetalle",
         component: () => import("pages/TransporteDetallePage.vue"),
-      },
+      }, // -K
       {
         path: "privacidad",
         component: () => import("pages/PrivacidadPage.vue"),
-      },
-      { path: "perfil", component: () => import("pages/PerfilPage.vue") },
-      { path: "contacto", component: () => import("pages/ContactoPage.vue") },
-      { path: "ofertas", component: () => import("pages/OfertasPage.vue") },
-      { path: "pruebas", component: () => import("pages/PruebasPage.vue") },
-      { path: "whatsapp", component: () => import("pages/WhatsappPage.vue") },
-      { path: "nombre", component: () => import("pages/NombrePage.vue") },
+      }, // -K
+      { path: "perfil", component: () => import("pages/PerfilPage.vue") }, // -K
+      { path: "contacto", component: () => import("pages/ContactoPage.vue") }, // -K
+      { path: "ofertas", component: () => import("pages/OfertasPage.vue") }, // -K
 
-      // ✅ Corregido: removido 'src/' para consistencia
+      { path: "pruebas", component: () => import("pages/PruebasPage.vue") }, // Página "Pruebas"
+      { path: "whatsapp", component: () => import("pages/WhatsappPage.vue") }, // Página "Whatsapp"
+      { path: "nombre", component: () => import("pages/NombrePage.vue") }, // Página "Nombre"
       {
         path: "mantenimiento",
-        component: () => import("pages/MantenimientoPage.vue"),
+        component: () => import("src/pages/MantenimientoPage.vue"),
       },
-      { path: "destinos", component: () => import("pages/DestinosPage.vue") },
-
-      // ✅ Corregido: quitada la '/' del inicio
       {
-        path: "detalledestinos",
-        component: () => import("pages/DetalleDestinosPage.vue"),
+        path: "destinos",
+        component: () => import("src/pages/DestinosPage.vue"),
       },
-
-      { path: "turismo", component: () => import("pages/TurismoPage.vue") },
+      {
+        path: "/detalledestinos",
+        component: () => import("src/pages/DetalleDestinosPage.vue"),
+      },
+      {
+        path: "turismo",
+        component: () => import("src/pages/TurismoPage.vue"),
+      },
       {
         path: "explorador",
         component: () => import("pages/ExploradorPage.vue"),
-      },
+      }, // Página de Mapa Interactivo
       {
         path: "experiencias",
         component: () => import("pages/ExperienciasPage.vue"),
-      },
-
-      // ⚠️ OJO: Verifica si es 'hospedaj' o 'hospedaje'
-      { path: "hospedaj", component: () => import("pages/HospedajPage.vue") },
+      }, // -Z
+      { path: "hospedaj", component: () => import("pages/HospedajPage.vue") }, // -Z
     ],
   },
 
-  // Ruta 404 (Mantenimiento)
+  // Ruta de error para capturar rutas no existentes
   {
     path: "/:catchAll(.*)*",
-    component: () => import("pages/MantenimientoPage.vue"),
+    component: () => import("src/pages/MantenimientoPage.vue"),
   },
 ];
 
